@@ -1,3 +1,10 @@
 baseURL = "http://jesustorres.es/"
+defaultContentLangague = "es-es"
 languageCode = "es-es"
 title = "Jesús Torres"
+
+theme = "LoveIt"
+
+[params]
+  # Necesario para activar LoveIt
+  version = "0.2.X"
