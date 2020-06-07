@@ -1,17 +1,24 @@
+CONTAINER_BIN = podman
 CONTAINER_IMAGE_TAG = 0.71.1
 CONTAINER_IMAGE_NAME = klakegg/hugo
 CONTAINER_IMAGE = $(CONTAINER_IMAGE_NAME):$(CONTAINER_IMAGE_TAG)
 
+HUGO_BIN = hugo
 SERVER_PORT = 1313
-HUGO_ENV = DEV	# or "production"
 
 server:
-	podman run --rm -it --volume $(PWD):/src --publish $(SERVER_PORT):1313 $(CONTAINER_IMAGE) server
+	hugo server
 
 build:
-	podman run --rm -it --volume $(PWD):/src --env HUGO_ENV=$(HUGO_ENV) $(CONTAINER_IMAGE)
+	hugo
 
-shell:
-	podman run --rm -it --volume $(PWD):/src --entrypoint /bin/sh $(CONTAINER_IMAGE)
+docker-server:
+	$(CONTAINER_BIN) run --rm -it --volume $(PWD):/src --publish $(SERVER_PORT):1313 $(CONTAINER_IMAGE) docker-server
 
-.PHONY: build server
+docker-build:
+	$(CONTAINER_BIN) run --rm -it --volume $(PWD):/src $(CONTAINER_IMAGE)
+
+docker-shell:
+	$(CONTAINER_BIN) run --rm -it --volume $(PWD):/src --entrypoint /bin/sh $(CONTAINER_IMAGE)
+
+.PHONY: build server docker-build docker-server docker-shell
