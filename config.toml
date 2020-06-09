@@ -1,10 +1,23 @@
 baseURL = "http://jesustorres.es/"
-defaultContentLangague = "es-es"
-languageCode = "es-es"
+defaultContentLanguage = "es"
+languageCode = "es"
 title = "Jesús Torres"
 
 theme = "LoveIt"
 
+# Actualizar el lastmod de cada págna usando la fecha del commit
+enableGitInfo = true
+
 [params]
   # Necesario para activar LoveIt
   version = "0.2.X"
+
+[taxonomies]
+#  category = "categories"
+  tag = "tags"
+  series = "series"
+
+[markup]
+  [markup.highlight]
+    # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
+    noClasses = false

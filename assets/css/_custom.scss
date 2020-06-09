@@ -1,0 +1,41 @@
+.single .single-title {
+    font-family: $single-title-font-family;
+    font-size: 2rem;
+    margin: 1rem 0 .3rem;
+}
+
+.toc-title {
+    font-family: $toc-title-font-family;
+}
+
+.single .content {
+    h2, h3, h4, h5 {
+        font-family: $content-headers-font-family;
+        font-size: 1.6rem;
+        margin: 2.5rem 0 1rem;
+    }
+
+    >p, ol, ul {
+        line-height: 1.8rem;
+        margin: 1rem 0;
+    }
+
+    li {
+        margin: .5rem 0;
+    }
+
+    figure {
+        margin-bottom: 2rem;
+    }
+}
+
+.home[posts] .summary {
+    .single-title {
+        font-family: $single-title-font-family;
+        font-size: 1.5rem;
+    }
+    
+    .content {
+        line-height: 1.6rem;
+    }
+}
