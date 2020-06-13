@@ -1,3 +1,6 @@
+/* Ajuste de estilos del tema
+ */
+
 .single .single-title {
     font-family: $single-title-font-family;
     font-size: 2rem;
@@ -37,5 +40,58 @@
     
     .content {
         line-height: 1.6rem;
+    }
+}
+
+/* Shortcodes propios
+ */
+
+.guiElement {
+    font-weight: bold;
+}
+
+/* Callouts
+ */
+
+%conum {
+    display: inline-block;
+    color: #fff !important;
+    background-color: rgba(0,0,0,.8);
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    text-align: center;
+    font-size: $callout-font-size;
+    width: calc(1.5 * #{$callout-font-size});
+    height: calc(1.5 * #{$callout-font-size});
+    line-height: calc(1.5 * #{$callout-font-size}); 
+    font-family: $callout-font-family;
+    font-style:normal;
+    font-weight:bold;
+}
+
+.conum[data-value] {
+    @extend %conum;
+}
+
+.conum[data-value]::after {
+    content:attr(data-value)
+}
+
+.single .content .callouts > ol {
+    list-style: none;
+    counter-reset: callout-counter;
+    margin: 0;
+    
+    li {
+        counter-increment: callout-counter;
+        position: relative;
+    }
+
+    li:before {
+        @extend %conum;
+        content: counter(callout-counter);
+        position: absolute;
+        left: calc(-2 * #{$callout-font-size});
+        top: calc(0.5 * #{$callout-font-size});
     }
 }

@@ -1,0 +1,6 @@
+<span class="guiSeq">
+    {{- range $index, $element := split (.Get 0) "/" -}}
+        {{- if $index }} &#x2B9E; {{ end -}}
+        <span class="guiElement">{{- $element -}}</span>
+    {{- end -}}
+</span>

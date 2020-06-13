@@ -1,0 +1,6 @@
+<span class="kbdSeq">
+    {{- range $index, $element := split (.Get 0) "+" -}}
+        {{- if $index }} + {{ end -}}
+        <kbd>{{- $element -}}</kbd>
+    {{- end -}}
+</span>

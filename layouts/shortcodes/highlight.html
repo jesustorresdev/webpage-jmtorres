@@ -1,0 +1,25 @@
+{{with .Parent -}}
+    {{ range $index, $line := split (trim $.Inner "\n\r") "\n" -}}
+        {{ $calloutSubstr := index (findRE "\\s?<!?(|--)(\\d+)(|--)>( ?<!?(|--)(\\d+)(|--)>)*$" $line) 0 -}}
+        {{ with $calloutSubstr -}}
+            {{ $line = strings.TrimSuffix $calloutSubstr $line -}}
+            {{ $callouts := findRE "\\d+" $calloutSubstr -}}
+            {{ $.Parent.Scratch.SetInMap "CalloutByLineno" (string $index) $callouts -}}
+        {{ end -}}
+        {{ $.Scratch.Add "CleanedInner" $line -}}
+        {{ $.Scratch.Add "CleanedInner" "\n" -}}
+    {{ end -}}
+    {{ "<!--Highlight Block Begin-->" | safeHTML -}}
+    {{ if len $.Params | eq 2 -}}
+        {{ highlight ($.Scratch.Get "CleanedInner") ($.Get 0) ($.Get 1) -}}
+    {{ else -}}
+        {{ highlight ($.Scratch.Get "CleanedInner") ($.Get 0) "" -}}
+    {{ end -}}
+    {{ "<!--Highlight Block End-->" | safeHTML -}}
+{{ else -}}
+    {{ if len $.Params | eq 2 -}}
+        {{ highlight (trim $.Inner "\n\r") ($.Get 0) ($.Get 1) -}}
+    {{ else -}}
+        {{ highlight (trim $.Inner "\n\r") ($.Get 0) "" -}}
+    {{ end -}}
+{{ end }}

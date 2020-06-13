@@ -1,0 +1,14 @@
+<div class="callouts">
+    {{- $highlighted := replaceRE "^(?s).*<!--Highlight Block Begin-->\\s*(.*)\\s*<!--Highlight Block End-->.*$" "$1" .Inner -}}
+    {{ $calloutContent := replaceRE "^(?s).*<!--Highlight Block Begin-->.*<!--Highlight Block End-->(.*)$" "$1" .Inner -}}
+    {{ replaceRE "^(?s)(.*)<code class=\"language-[^\"]+\" data-lang=\"[^\"]+\">.*</code>.*$" "$1" $highlighted | safeHTML -}}
+    {{ $highlightCode := replaceRE "^(?s).*(<code class=\"language-[^\"]+\" data-lang=\"[^\"]+\">.*</code>).*$" "$1" $highlighted -}}
+    {{ range $index, $line := split $highlightCode "\n" -}}
+        {{ $line | safeHTML -}}
+        {{ if isset ($.Scratch.Get "CalloutByLineno") (string $index) -}}               
+            {{ range (index ($.Scratch.Get "CalloutByLineno") (string $index)) }} <i class="conum" data-value="{{- . -}}"></i>{{ end -}}
+        {{ end }}{{ "\n" -}}
+    {{ end -}}
+    {{ replaceRE "^(?s).*<code class=\"language-[^\"]+\" data-lang=\"[^\"]+\">.*</code>(.*)$" "$1" $highlighted | safeHTML -}}
+    {{ $calloutContent | markdownify}}
+</div>
