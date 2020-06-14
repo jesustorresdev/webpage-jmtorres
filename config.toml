@@ -12,6 +12,17 @@ enableEmoji = true
 [params]
   # Necesario para activar LoveIt
   version = "0.2.X"
+[params.page]
+  # Mapbox GL JS config
+  [params.page.mapbox]
+    accessToken = "pk.eyJ1Ijoiam10b3JyZXMiLCJhIjoiY2tiZjhqZTB4MG44bzMwcDJxczlobTVncSJ9.7jnnoY0OkW-cw5WOYq0mag"
+    lightStyle = "mapbox://styles/mapbox/light-v10"
+    darkStyle = "mapbox://styles/mapbox/dark-v10"
+    navigation = true
+    geolocate = true
+    scale = true
+    fullscreen = true
+
 
 [taxonomies]
 #  category = "categories"
