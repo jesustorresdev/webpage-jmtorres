@@ -15,6 +15,12 @@ aliases:
     - "/tutorías-20c4b0125116"
 ---
 
+_Debido a la situación sobrevenida derivada de la pandemia del COVID-19, las tutorías tendrán lugar exclusivamente de forma no presencial._
+_El horario previsto es de **lunes a viernes de 17:00 a 18:15**._
+_**Recomiendo coger cita en el [calendario](https://calendar.google.com/calendar/selfsched?sstoken=UUNwTTF0UmdJWWd2fGRlZmF1bHR8OWFkMDEwNTlhNTA3MjQ4N2Y4MTNmZjQyMjQ4ZmY4ZDg)**._
+
+____
+
 Durante el actual curso académico las horas previstas de tutorías son las siguientes:
 
 * **Martes**, de 16:00 a 19:00.
