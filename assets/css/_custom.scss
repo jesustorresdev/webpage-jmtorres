@@ -1,5 +1,4 @@
-/* Ajuste de estilos del tema
- */
+// Ajuste de estilos del tema
 
 .single .single-title {
     font-family: $single-title-font-family;
@@ -43,19 +42,17 @@
     }
 }
 
-/* Shortcodes propios
- */
+// Shortcodes propios
 
 .guiElement {
     font-weight: bold;
 }
 
-/* Callouts
- */
+// Callouts
 
 %conum {
     display: inline-block;
-    color: #fff !important;
+    color: $global-background-color !important;
     background-color: $global-font-color;
     -webkit-border-radius: 100px;
     border-radius: 100px;
@@ -71,6 +68,12 @@
 
 .conum[data-value] {
     @extend %conum;
+}
+
+[theme=dark] .conum[data-value] {
+    @extend %conum;
+    color: $global-background-color-dark !important;
+    background-color: $global-font-color-dark;
 }
 
 .conum[data-value]::after {
@@ -93,5 +96,14 @@
         position: absolute;
         left: calc(-2 * #{$callout-font-size});
         top: calc(0.5 * #{$callout-font-size});
+    }
+}
+
+[theme=dark] .single .content .callouts > ol {
+
+    li:before {
+        @extend %conum;
+        color: $global-background-color-dark !important;
+        background-color: $global-font-color-dark;
     }
 }
