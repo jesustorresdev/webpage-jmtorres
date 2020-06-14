@@ -5,8 +5,9 @@ title = "Jesús Torres"
 
 theme = "LoveIt"
 
-# Actualizar el lastmod de cada págna usando la fecha del commit
+# Actualizar el lastmod de cada página usando la fecha del commit
 enableGitInfo = true
+enableEmoji = true
 
 [params]
   # Necesario para activar LoveIt
