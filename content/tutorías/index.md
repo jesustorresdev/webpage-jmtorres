@@ -3,7 +3,7 @@ title: "Horario y lugar de las tutorías"
 author: "Jesús Torres"
 date: 2013-01-09T23:00:00.000Z
 
-subtitle: "Tutorías en la Universidad de La Laguna"
+subtitle: "Universidad de La Laguna"
 
 featuredImage: "/tutorías/images/2.jpg" 
 images:
@@ -17,7 +17,7 @@ aliases:
 
 _Debido a la situación sobrevenida derivada de la pandemia del COVID-19, las tutorías tendrán lugar exclusivamente de forma no presencial._
 _El horario previsto es de **lunes a viernes de 17:00 a 18:15**._
-_**Recomiendo coger cita en el [calendario](https://calendar.google.com/calendar/selfsched?sstoken=UUNwTTF0UmdJWWd2fGRlZmF1bHR8OWFkMDEwNTlhNTA3MjQ4N2Y4MTNmZjQyMjQ4ZmY4ZDg)**._
+_**Es recomendable coger cita en el [calendario](https://calendar.google.com/calendar/selfsched?sstoken=UUNwTTF0UmdJWWd2fGRlZmF1bHR8OWFkMDEwNTlhNTA3MjQ4N2Y4MTNmZjQyMjQ4ZmY4ZDg)**._
 
 ____
 
