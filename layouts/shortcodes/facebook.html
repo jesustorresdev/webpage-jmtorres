@@ -1,0 +1,20 @@
+{{- $type := .Get "type" | default (.Get 0) }}
+{{- $src := .Get "src" | default (.Get 1) -}}
+<figure>
+  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+    {{- if $type | eq "video" -}}
+      <iframe src="https://www.facebook.com/plugins/video.php?href={{ $src  }}&show_text=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowFullScreen=></iframe>
+    {{- else if $type | eq "post" -}}
+      <iframe src="https://www.facebook.com/plugins/post.php?href={{ $src }}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowFullScreen=></iframe>
+    {{- end -}}
+    {{- if (.Get "caption") -}}
+  </div>
+  <figcaption>
+    {{ with (.Get "title") -}}
+      <h4>{{ . }}</h4>
+    {{- end -}}
+    {{- if (.Get "caption") -}}<p>
+      {{- .Get "caption" | markdownify -}}}{{ end }}</p>
+  </figcaption>
+  {{- end }}
+</figure>
