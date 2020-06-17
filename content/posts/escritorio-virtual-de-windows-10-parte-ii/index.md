@@ -1,5 +1,5 @@
 ---
-title: "Escritorio virtual de Windows 10 (II)"
+title: "Escritorio virtual de Windows 10 (y II)"
 author: "Jesús Torres"
 date: 2019-09-18T21:37:51.827Z
 
@@ -272,13 +272,13 @@ De hecho mi etiqueta `<features>` es así:
 {{< / highlight >}}
 
 Cuando se tiene una GPU de NVIDIA hace falta cambiar lo mismo, independientemente de la versión de Windows, para que funcione.
-También se recomienda buscar la etiqueta `<timer name=’hypervclock’ ... >` dentro de `<clock>` y dejarla así…
+También se recomienda buscar la etiqueta `<timer name=’hypervclock’ ... >` dentro de `<clock>` y dejarla así...
 
 {{< highlight xml >}}
 <timer name='hypervclock' present='no'>
 {{< / highlight >}}
 
-…o borrarla.
+...o borrarla.
 
 Con estos cambios el arranque debe ocurrir como hemos descrito anteriormente.
 Después solo tendremos que buscar el controlador adecuado e instalarlo.
