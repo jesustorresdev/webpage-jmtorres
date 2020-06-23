@@ -6,8 +6,8 @@ date: 2017-06-02T00:19:17.802Z
 summary: "Segunda parte de la serie de artículo sobre las turbias maquinaciones entorno al Máster de Videojuegos de la ULL en 2017."
 
 tags:
- - videojuegos
- - universidad
+ - Videojuegos
+ - Universidad
 
 series:
  - master-videojuegos-ull
@@ -17,7 +17,7 @@ images:
  - "/posts/post-mortem-del-máster-de-videojuegos-de-la-ull-parte-2/images/1.jpg" 
 
 aliases:
-    - "/post-mortem-del-máster-de-videojuegos-de-la-ull-parte-2-eac811fe9245"
+ - "/post-mortem-del-máster-de-videojuegos-de-la-ull-parte-2-eac811fe9245"
 ---
 
 _¿Te has perdido alguna parte anterior? La primera la tienes [aquí](https://medium.com/p/c0c48b2305f8/)._

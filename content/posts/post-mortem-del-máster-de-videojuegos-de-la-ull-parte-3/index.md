@@ -4,8 +4,8 @@ author: "Jesús Torres"
 date: 2017-06-08T11:20:04.278Z
 
 tags:
- - videojuegos
- - universidad
+ - Videojuegos
+ - Universidad
 
 series:
  - master-videojuegos-ull
@@ -15,7 +15,7 @@ images:
  - "/posts/post-mortem-del-máster-de-videojuegos-de-la-ull-parte-3/images/1.jpg" 
 
 aliases:
-    - "/post-mortem-del-máster-de-videojuegos-de-la-ull-parte-3-9b4837754c06"
+ - "/post-mortem-del-máster-de-videojuegos-de-la-ull-parte-3-9b4837754c06"
 ---
 
 _Lo prometido es deuda._
@@ -48,9 +48,9 @@ En igualdad de condiciones, sin oportunidad de secuestrar o desviar el proyecto.
 Usamos herramientas colaborativas y las discusiones fueron completamente abiertas.
 **Participó quién tuvo interés y se auto-excluyó quién así lo quiso**.
 Eso fue decisión de cada uno.
-*  No existía antes y no creo que exista después ningún tipo de problema personal.
+* No existía antes y no creo que exista después ningún tipo de problema personal.
 **El único problema lo crearon los órganos de dirección de la universidad** ---desde la dirección del departamento a la dirección de la universidad--- al ignorar repetidamente la decisión de un conjunto de profesores y dejarnos indefensos.
-*  Esta guerra no escode ningún fin, ni personal ni político.
+* Esta guerra no escode ningún fin, ni personal ni político.
 **La he hecho mía porque soy uno de los profesores perjudicados, creo que es injusto lo que se nos ha hecho y detesto la falta de honestidad**.
 Fui leal al aceptar este trabajo para este equipo y al intentar resolver el conflicto por todos los medios posibles, antes de verme obligado a llegar a esto.
 

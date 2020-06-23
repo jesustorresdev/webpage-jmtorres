@@ -4,9 +4,9 @@ author: "Jesús Torres"
 date: 2018-02-21T17:01:01.186Z
 
 tags:
- - viajes
- - videojuegos
- - universidad
+ - Viajes
+ - Videojuegos
+ - Universidad
 
 series:
  - méxico-2017
@@ -21,7 +21,7 @@ images:
 
 
 aliases:
-    - "/videojuegos-y-visita-a-monterrey-méxico-2017-i-22a96d82bc57"
+ - "/videojuegos-y-visita-a-monterrey-méxico-2017-i-22a96d82bc57"
 ---
 
 Estamos en febrero y hasta el momento no había tenido tiempo de hablar de la estancia que hicimos a finales del año pasado en algunas universidades mexicanas.

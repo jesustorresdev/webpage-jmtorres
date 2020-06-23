@@ -3,9 +3,11 @@ title: "Escritorio virtual de Windows 10 (I)"
 author: "Jesús Torres"
 date: 2019-09-18T21:36:51.827Z
 
+license: "CC-BY-4.0"
+
 tags:
- - linux
- - virtualización
+ - Linux
+ - Virtualización
 
 series:
  - virtual-desktop
@@ -46,7 +48,7 @@ Para que esta configuración funcione es necesario:
 
 ## Instalación del software
 
-Para empezar necesitamos _QEMU/KVM_, _libvirt_, _OVMF_ y _Virtual Machine Manager_:
+Para empezar necesitamos _QEMU/KVM_, _Libvirt_, _OVMF_ y _Virtual Machine Manager_:
 
 {{< highlight bash >}}
 sudo apt-get install qemu-kvm ovmf libvirt-clients libvirt-daemon-system bridge-utils virt-manager
@@ -156,8 +158,7 @@ Para no hacerlo a mano en cada ocasión, es interesante tener un _hook_ de _libv
 
 ## Instalar el libvirt hook
 
-En el repositorio [virtual-desktop](https://github.com/aplatanado/virtual-desktop) en GitHub he ido poniendo scripts y archivos de configuración relevantes para este proyecto:
-
+En el repositorio {{< github "aplatanado/virtual-desktop" >}} he ido poniendo scripts y archivos de configuración relevantes para este proyecto.
 Dentro del directorio `libvirt-hooks` está el script `qemu`, que es el _hook_ que se encargará del registro en VFIO durante el arranque de la máquina virtual.
 
 Se puede instalar así:

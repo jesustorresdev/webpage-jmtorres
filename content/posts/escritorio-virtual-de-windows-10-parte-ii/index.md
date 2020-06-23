@@ -3,9 +3,11 @@ title: "Escritorio virtual de Windows 10 (y II)"
 author: "Jesús Torres"
 date: 2019-09-18T21:37:51.827Z
 
+license: "CC-BY-4.0"
+
 tags:
- - linux
- - virtualización
+ - Linux
+ - Virtualización
 
 series:
  - virtual-desktop
@@ -329,16 +331,16 @@ Tengo en mente un proyecto para poder hacer eso utilizando combinaciones de tecl
 El sonido es seguramente el aspecto con el que menos satisfecho estoy. Después de probar muchas alternativas, creo que las mejores opciones son:
 
 * **Conectar directamente una tarjeta de sonido o unos auriculares** en un puerto USB asignado a la máquina virtual por _PCI Passthrough_.
-  Sin duda es así como se consigue la mejor calidad de sonido. 
-  También sirve la salida de audio HDMI de la tarjeta gráfica asignada.
-  Se puede escuchar por los altavoces del monitor ---si los tiene--- o conectar algunos por la salida de audio que los monitores suelen traer.
-  Si no queremos tener dos parejas de altavoces, una para cada sistema, ni estar conectando y desconectado cables según nos interese, podemos comprar un mezclador barato para combinar ambas salidas de audio y tener solo unos altavoces conectados.
-* **Usar una tarjeta de sonido virtual de red**, como la del proyecto [_Scream_](https://github.com/duncanthrax/scream).
-  La idea de la tarjeta virtual de red es instalar en Windows un controlador de dispositivo de tarjeta de sonido que realmente envíe el audio por red a otro equipo para su reproducción.
-  En ese sentido, el proyecto _Scream_ proporciona tanto los controladores para Windows como el servidor para Linux.
-  El resultado es bastante bueno, prácticamente sin distorsiones ni latencia.
+Sin duda es así como se consigue la mejor calidad de sonido. 
+También sirve la salida de audio HDMI de la tarjeta gráfica asignada.
+Se puede escuchar por los altavoces del monitor ---si los tiene--- o conectar algunos por la salida de audio que los monitores suelen traer.
+Si no queremos tener dos parejas de altavoces, una para cada sistema, ni estar conectando y desconectado cables según nos interese, podemos comprar un mezclador barato para combinar ambas salidas de audio y tener solo unos altavoces conectados.
+* **Usar una tarjeta de sonido virtual de red**, como la del proyecto {{< github "duncanthrax/scream" >}}.
+La idea de la tarjeta virtual de red es instalar en Windows un controlador de dispositivo de tarjeta de sonido que realmente envíe el audio por red a otro equipo para su reproducción.
+En ese sentido, el proyecto _scream_ proporciona tanto los controladores para Windows como el servidor para Linux.
+El resultado es bastante bueno, prácticamente sin distorsiones ni latencia.
 * **Añadir un dispositivo de sonido emulado a la máquina virtual** y que _QEMU_ haga el resto. 
-  Esta es la solución típica. Necesita muchos ajustes y al final el resultado no es muy satisfactorio. Pero voy a explicar como lo he configurado yo.
+Esta es la solución típica. Necesita muchos ajustes y al final el resultado no es muy satisfactorio. Pero voy a explicar como lo he configurado yo.
 
 Primero hay que añadir un dispositivo de sonido a la máquina virtual.
 En mi caso, tras varias pruebas, he dejado el modelo ICH9, que es bastante moderno y funciona perfectamente.

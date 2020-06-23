@@ -4,9 +4,9 @@ author: "Jesús Torres"
 date: 2018-04-17T07:16:01.457Z
 
 tags:
- - viajes
- - videojuegos
- - universidad
+ - Viajes
+ - Videojuegos
+ - Universidad
 
 series:
  - méxico-2017
@@ -23,7 +23,7 @@ images:
 
 
 aliases:
-    - "/visita-a-monterrey-méxico-2017-y-ii-20f733e3a9a4"
+ - "/visita-a-monterrey-méxico-2017-y-ii-20f733e3a9a4"
 ---
 
 _Voy a continuar comentando la estancia que hicimos a finales del año pasado en algunas universidades mexicanas para colaborar y coger ideas ---e inflarnos a estupenda comida mexicana---._

@@ -3,9 +3,11 @@ title: "IOMMU: La maldición de la VGA"
 author: "Jesús Torres"
 date: 2019-01-28T07:01:01.105Z
 
+license: "CC-BY-4.0"
+
 tags:
- - linux
- - virtualización
+ - Linux
+ - Virtualización
 
 series:
  - virtual-desktop
@@ -17,7 +19,7 @@ images:
  - "/posts/iommu-la-maldición-de-la-vga/images/3.jpg" 
 
 aliases:
-    - "/iommu-la-maldici%C3%B3n-de-la-vga-cb016e0385a7"
+ - "/iommu-la-maldici%C3%B3n-de-la-vga-cb016e0385a7"
 ---
 
 _Voy a explicar el problema con las gráficas integradas Intel (IGD) y las gráficas discretas antiguas que no soportan UEFI cuando se intenta crear un escritorio virtual_
@@ -90,8 +92,8 @@ Seguramente no nos sirva para tener un escritorio para jugar a juegos recientes,
 
 El arbitraje VGA tiene varias opciones para evitar que una tarjeta reclame una transacción en el rango de direcciones de la interfaz VGA:
 
-*   Desactivar el uso de este rango a través de algún mecanismo interno de la propia tarjeta.
-*   Desactivar el acceso del dispositivo al bus PCI o PCIe.
+* Desactivar el uso de este rango a través de algún mecanismo interno de la propia tarjeta.
+* Desactivar el acceso del dispositivo al bus PCI o PCIe.
 
 Lamentablemente, la capacidad de desactivar el rango de la interfaz VGA no funciona o ha sido eliminado de las IGD.
 El único mecanismo posible para evitar conflictos, es desactivar el acceso del dispositivo al bus.

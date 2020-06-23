@@ -7,8 +7,8 @@ summary: "Este artículo y posteriores son la crónica de los acontecimientos qu
 Aquí la dejo escrita, para vergüenza de los turbios, y para compartirla con todo aquel que quiera saber lo que realmente pasó."
 
 tags:
- - videojuegos
- - universidad
+ - Videojuegos
+ - Universidad
 
 series:
  - master-videojuegos-ull

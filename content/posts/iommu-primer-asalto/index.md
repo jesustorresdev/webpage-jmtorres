@@ -3,9 +3,11 @@ title: "IOMMU: Primer asalto"
 author: "Jesús Torres"
 date: 2015-10-06T08:00:49.000Z
 
+license: "CC-BY-4.0"
+
 tags:
- - linux
- - virtualización
+ - Linux
+ - Virtualización
 
 series:
  - virtual-desktop
@@ -18,7 +20,7 @@ images:
 
 
 aliases:
-    - "/iommu-primer-asalto-7d342f7e77e5"
+ - "/iommu-primer-asalto-7d342f7e77e5"
 ---
 
 La IOMMU es una unidad de algunas CPU modernas que, entre otras cosas, permite que una máquina virtual pueda tener acceso directo y exclusivo a ciertos dispositivos del sistema.
@@ -132,5 +134,5 @@ _(Parte 2, [aquí](/posts/iommu-la-maldición-de-la-vga))_
 
 ## Referencias
 
-*   [IOMMU --- Wikipedia](https://en.wikipedia.org/wiki/IOMMU)
-*   [List of IOMMU-supporting hardware --- Wikipedia](https://en.wikipedia.org/wiki/List_of_IOMMU-supporting_hardware)
+* [IOMMU --- Wikipedia](https://en.wikipedia.org/wiki/IOMMU)
+* [List of IOMMU-supporting hardware --- Wikipedia](https://en.wikipedia.org/wiki/List_of_IOMMU-supporting_hardware)
