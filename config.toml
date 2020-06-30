@@ -44,7 +44,7 @@ enableEmoji = true
     copyright = true
     author = true
     since = 2013
-    license = '<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> — Excepto donde se indique lo contrario'
+    license = '<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> — Excepto donde se indique lo contrario&nbsp;|&nbsp;<a href="/privacidad/">Privacidad</a>'
 
   [params.home]
     [params.home.profile]
@@ -77,6 +77,18 @@ enableEmoji = true
   Facebook = true
   Linkedin = true
   Whatsapp = true
+
+[params.cookieconsent]
+  enable = true
+  theme = "block"
+  [params.cookieconsent.palette.popup]
+    background = "#000000"
+  [params.cookieconsent.palette.button]
+    background = "#ffffff"
+  [params.cookieconsent.content]
+    message = ""
+    link = "Saber más"
+    href = "/privacidad"
 
 [taxonomies]
   #category = "categories"
