@@ -2,34 +2,119 @@ baseURL = "http://jesustorres.es/"
 defaultContentLanguage = "es"
 languageCode = "es"
 title = "Jesús Torres"
+description = "Página personal y blog de Jesús Torres."
+keywords = ["jmtorres", "Jesús Torres", "Universidad", "Linux", "Sistemas Operativos", "Qt", "C++0"]
 
 theme = "LoveIt"
 
 # Actualizar el lastmod de cada página usando la fecha del commit
 enableGitInfo = true
+#gitRepo = ""
+
 enableEmoji = true
 
-[params]
-  # Necesario para activar LoveIt
-  version = "0.2.X"
-[params.page]
-  # Mapbox GL JS config
-  [params.page.mapbox]
-    accessToken = "pk.eyJ1Ijoiam10b3JyZXMiLCJhIjoiY2tiZjhqZTB4MG44bzMwcDJxczlobTVncSJ9.7jnnoY0OkW-cw5WOYq0mag"
-    lightStyle = "mapbox://styles/mapbox/light-v10"
-    darkStyle = "mapbox://styles/mapbox/dark-v10"
-    navigation = true
-    geolocate = true
-    scale = true
-    fullscreen = true
+[author]
+  name = "Jesús Torres"
+  email = "jmtorres@ull.es"
+  link = "http://jesustorres.es/"
 
+[params]
+  version = "0.2.X"
+  [params.page]
+    # Mapbox GL JS config
+    [params.page.mapbox]
+      accessToken = "pk.eyJ1Ijoiam10b3JyZXMiLCJhIjoiY2tiZjhqZTB4MG44bzMwcDJxczlobTVncSJ9.7jnnoY0OkW-cw5WOYq0mag"
+      lightStyle = "mapbox://styles/mapbox/light-v10"
+      darkStyle = "mapbox://styles/mapbox/dark-v10"
+      navigation = true
+      geolocate = true
+      scale = true
+      fullscreen = true
+
+  [params.header]
+    [params.header.title]
+      logo = ""
+      name = "Jesús Torres"
+      pre = '<i class="fas fa-code"></i>'
+      post = ''
+
+  [params.footer]
+    enable = true
+    hugo = true
+    copyright = true
+    author = true
+    since = 2013
+    license = '<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> — Excepto donde se indique lo contrario'
+
+  [params.home]
+    [params.home.profile]
+      enable = true
+      # Avantar. Puede usarse Gravatar o cualquier imagen
+      gravatarEmail = "jmtorres@ull.edu.es"
+      #avatarURL = "/static/images/avatar.png"
+      subtitle = "Docente e investigador de la Universidad de La Laguna"
+      # Use typeit animation for subtitle
+      typeit = true
+      social = true
+
+    [params.home.posts]
+      enable = true
+      paginate = 6
+  
+  [params.social]
+    GitHub = "aplatanado"
+    Linkedin = "jesusmtorres"
+    Twitter = "susotorres"
+    Medium = "jmtorres"
+    Youtubechannel = "UCvU1vw7r4hwgvfWVVtOW3Qg"
+    Googlescholar = "-I2HnbIAAAAJ"
+    Researchgate = "Jesus_Torres30"
+    RSS = true
+
+[params.page.share]
+  enable = true
+  Twitter = true
+  Facebook = true
+  Linkedin = true
+  Whatsapp = true
 
 [taxonomies]
-#  category = "categories"
+  #category = "categories"
   tag = "tags"
   series = "series"
 
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Inicio"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+  [[menu.main]]
+    identifier = "tutorías"
+    name = "Tutorías"
+    url = "/tutorías/"
+    weight = 2
+  [[menu.main]]
+    identifier = "acerca"
+    name = "Acerca"
+    url = "/acerca/"
+    weight = 3
+
 [markup]
   [markup.highlight]
-    # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
+    lineNumbersInTable = true
+    # False is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
     noClasses = false
+
+[permalinks]
+  #posts = ":filename"
