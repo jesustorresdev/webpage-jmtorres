@@ -6,19 +6,19 @@ CONTAINER_IMAGE = $(CONTAINER_IMAGE_NAME):$(CONTAINER_IMAGE_TAG)
 HUGO_BIN = hugo
 SERVER_PORT = 1313
 
-server:
-	hugo server
+local-server:
+	hugo server --disableFastRender
 
-build:
+local-build:
 	hugo
 
-docker-server:
-	$(CONTAINER_BIN) run --rm -it --volume $(PWD):/src --publish $(SERVER_PORT):1313 $(CONTAINER_IMAGE) docker-server
+server:
+	$(CONTAINER_BIN) run --rm -it --volume $(PWD):/src --publish $(SERVER_PORT):1313 $(CONTAINER_IMAGE) container-server
 
-docker-build:
+build:
 	$(CONTAINER_BIN) run --rm -it --volume $(PWD):/src $(CONTAINER_IMAGE)
 
-docker-shell:
-	$(CONTAINER_BIN) run --rm -it --volume $(PWD):/src --entrypoint /bin/sh $(CONTAINER_IMAGE)
+shell:
+	$(CONTAINER_BIN) run --rm -it --volume $(PWD):/src $(CONTAINER_IMAGE) shell
 
-.PHONY: build server docker-build docker-server docker-shell
+.PHONY: loca-build local-server build server shell
