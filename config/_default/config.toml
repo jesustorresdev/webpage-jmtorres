@@ -78,25 +78,6 @@ enableEmoji = true
     Linkedin = true
     Whatsapp = true
 
-  [params.cookieconsent]
-    enable = true
-    type = "opt-in"
-    theme = "block"
-
-    [params.cookieconsent.palette.popup]
-      background = "#000000"
-
-    [params.cookieconsent.palette.button]
-      background = "#ffffff"
-
-    [params.cookieconsent.content]
-      message = "Este sitio web no usa cookies propias ni tecnologías similares pero integra vídeo de Youtube, documentos de G Suite y otros contenidos de terceros que si las utilizan, tal y como se especifica en la política de privacidad.<br>Puedes aceptarla para acceder a todos los contenidos o rechazarla."    
-      allow = "Aceptar"
-      href = "/política-de-cookies"
-      link = "POLÍTICA DE COOKIES"
-      deny = "Rechazar"
-      policy = "Política de cookies"
-
 [taxonomies]
   #category = "categories"
   tag = "tags"
