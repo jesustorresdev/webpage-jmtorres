@@ -1,13 +1,13 @@
 {{- $id := .Get "id" | default (.Get 0) -}}
 {{- $lang := .Get "lang" | default (.Get 1) -}}
-<figure>
-  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-    <iframe src="https://embed.ted.com/talks/lang/{{ $lang }}/{{ $id }}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowFullScreen=></iframe>
-  </div>
-  {{- if (.Get "caption") -}}
-    <figcaption>
-      {{- if (.Get "caption") -}}<p>
-        {{- .Get "caption" | markdownify -}}{{ end }}</p>
-    </figcaption>
-  {{- end }}
-</figure>
+{{- $options := dict "Src" ( printf "https://embed.ted.com/talks/lang/%s/%s" $lang $id ) -}}
+{{- if .Get "caption" -}}
+  {{- $options = dict "Caption" (.Get "caption") | merge $options -}}
+{{- end -}}
+<div class="cookieconsent-section">
+  {{- if $.Site.Params.cookieconsent | and $.Site.Params.cookieconsent.enable -}}
+    {{- dict "Site" "ted.com" "PolicyLink" "https://www.ted.com/about/our-organization/our-policies-terms/privacy-policy" | partial "externalcookie.html" -}}
+    {{- $options = dict "CookieConsentTag" "statistics" | merge $options -}}
+  {{- end -}}
+  {{- partial "iframe.html" $options -}}
+</div>

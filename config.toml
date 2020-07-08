@@ -44,7 +44,7 @@ enableEmoji = true
     copyright = true
     author = true
     since = 2013
-    license = '<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> — Excepto donde se indique lo contrario&nbsp;|&nbsp;<a href="/privacidad/">Privacidad</a>'
+    license = '<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> — Excepto donde se indique lo contrario      '
 
   [params.home]
     [params.home.profile]
@@ -71,24 +71,31 @@ enableEmoji = true
     Researchgate = "Jesus_Torres30"
     RSS = true
 
-[params.page.share]
-  enable = true
-  Twitter = true
-  Facebook = true
-  Linkedin = true
-  Whatsapp = true
+  [params.page.share]
+    enable = true
+    Twitter = true
+    Facebook = true
+    Linkedin = true
+    Whatsapp = true
 
-[params.cookieconsent]
-  enable = true
-  theme = "block"
-  [params.cookieconsent.palette.popup]
-    background = "#000000"
-  [params.cookieconsent.palette.button]
-    background = "#ffffff"
-  [params.cookieconsent.content]
-    message = ""
-    link = "Saber más"
-    href = "/privacidad"
+  [params.cookieconsent]
+    enable = true
+    type = "opt-in"
+    theme = "block"
+
+    [params.cookieconsent.palette.popup]
+      background = "#000000"
+
+    [params.cookieconsent.palette.button]
+      background = "#ffffff"
+
+    [params.cookieconsent.content]
+      message = "Este sitio web no usa cookies propias ni tecnologías similares pero integra vídeo de Youtube, documentos de G Suite y otros contenidos de terceros que si las utilizan, tal y como se especifica en la política de privacidad.<br>Puedes aceptarla para acceder a todos los contenidos o rechazarla."    
+      allow = "Aceptar"
+      href = "/política-de-cookies"
+      link = "POLÍTICA DE COOKIES"
+      deny = "Rechazar"
+      policy = "Política de cookies"
 
 [taxonomies]
   #category = "categories"
@@ -127,6 +134,3 @@ enableEmoji = true
     lineNumbersInTable = true
     # False is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
     noClasses = false
-
-[permalinks]
-  #posts = ":filename"
