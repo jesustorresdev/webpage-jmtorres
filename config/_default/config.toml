@@ -78,6 +78,11 @@ enableEmoji = true
     Linkedin = true
     Whatsapp = true
 
+  [params.search]
+    enable = true
+    type = "lunr"
+    snippetLength = 100
+
 [taxonomies]
   #category = "categories"
   tag = "tags"
@@ -115,3 +120,11 @@ enableEmoji = true
     lineNumbersInTable = true
     # False is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
     noClasses = false
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
