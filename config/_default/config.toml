@@ -1,4 +1,4 @@
-baseURL = "http://jesustorres.es/"
+baseURL = "https://www.jesustorres.es/"
 defaultContentLanguage = "es"
 languageCode = "es"
 title = "Jesús Torres"
@@ -9,14 +9,13 @@ theme = "LoveIt"
 
 # Actualizar el lastmod de cada página usando la fecha del commit
 enableGitInfo = true
-#gitRepo = ""
 
 enableEmoji = true
 
 [author]
   name = "Jesús Torres"
   email = "jmtorres@ull.es"
-  link = "http://jesustorres.es/"
+  link = "https://jesustorres.es/"
 
 [params]
   version = "0.2.X"
