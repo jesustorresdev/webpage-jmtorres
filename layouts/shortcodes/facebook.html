@@ -1,9 +1,9 @@
 {{- $type := .Get "type" | default (.Get 0) -}}
 {{- $src := .Get "src" | default (.Get 1) -}}
 {{- if $type | eq "video" -}}
-  {{- $src = ( printf "https://www.facebook.com/plugins/video.php?href=%s&show_text=0" $src) -}}
+  {{- $src = ( printf "https://www.facebook.com/plugins/video.php?%s&show_text=0" (querify "href" $src)) -}}
 {{- else if $type | eq "post" -}}
-  {{- $src = ( printf "https://www.facebook.com/plugins/post.php?href=%s&" $src) -}}
+  {{- $src = ( printf "https://www.facebook.com/plugins/post.php?%s&" (querify "href" $src)) -}}
 {{- end -}}
 {{- $options := dict "Src" $src -}}
 {{- if .Get "caption" -}}
