@@ -9,10 +9,10 @@ toc: false
 tags:
  - Universidad
 
-featuredImage: "/posts/agua-caliente-o-despachos-nuevos/images/featured.jpg" 
+featuredImage: "images/featured.jpg" 
 images:
- - "/posts/agua-caliente-o-despachos-nuevos/images/1.jpg" 
- - "/posts/agua-caliente-o-despachos-nuevos/images/2.jpg" 
+ - "images/1.jpg" 
+ - "images/2.jpg" 
 
 
 aliases:
@@ -34,7 +34,7 @@ Como los recursos de la institución no son ilimitados, **tenemos que priorizar 
 Y en nuestra opinión, habiendo problemas tan básicos como con el agua caliente y las humedades en los colegios mayores y en la residencia universitaria, infraestructuras en un estado tan pésimo que en algunos sitios [el techo se ha caído en la cabeza de nuestros estudiantes](https://amec.wordpress.com/2013/12/04/el-mal-estado-de-la-facultad-de-medicina-de-la-ull-pone-en-peligro-a-los-estudiantes-nota-de-prensa-de-la-delegacion-de-alumnos-de-medicina/) o [centros que se inundan](https://amec.wordpress.com/2014/11/20/fotodenuncia-guajara-19112014/) cada vez que llegan las lluvias; **no podíamos comprometernos a poner por delante el acondicionar mejores despachos para algunos profesores**.
 Incluso aunque entre ese «algunos» estuviera yo mismo.
 
-{{< figure src="/posts/agua-caliente-o-despachos-nuevos/images/1.jpg" caption="Fotodenuncia del grupo claustral AMEC 19/11/1994." >}}
+{{< figure src="images/1.jpg" caption="Fotodenuncia del grupo claustral AMEC 19/11/1994." >}}
 
 Aunque creo que para todos los que somos parte de la ULL son evidentes estos problemas, antes de proseguir me parece conveniente incidir en que no es algo que me esté inventando.
 Una cosa positiva que han traído las elecciones a Rector es que ahora todos en gran medida conocemos las necesidades que tiene la institución.

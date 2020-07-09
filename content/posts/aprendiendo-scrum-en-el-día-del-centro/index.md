@@ -11,9 +11,9 @@ tags:
  - Scrum
  - Agile
 
-featuredImage: "/posts/aprendiendo-scrum-en-el-día-del-centro/images/featured.png" 
+featuredImage: "images/featured.png" 
 images:
- - "/posts/aprendiendo-scrum-en-el-día-del-centro/images/featured.png" 
+ - "images/featured.png" 
 
 
 aliases:

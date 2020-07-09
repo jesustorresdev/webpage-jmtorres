@@ -9,9 +9,9 @@ toc: false
 tags:
  - Universidad
 
-featuredImage: "/posts/la-ull-sin-campus-virtual-hasta-nuevo-aviso/images/1.jpg"
+featuredImage: "images/1.jpg"
 images:
- - "/posts/la-ull-sin-campus-virtual-hasta-nuevo-aviso/images/1.jpg" 
+ - "images/1.jpg" 
 
 
 aliases:

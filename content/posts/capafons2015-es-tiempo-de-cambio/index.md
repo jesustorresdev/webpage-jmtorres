@@ -9,7 +9,7 @@ tags:
  - Universidad
 
 images:
- - "/posts/capafons2015-es-tiempo-de-cambio/images/1.jpg" 
+ - "images/1.jpg" 
 
 
 aliases:
@@ -42,7 +42,7 @@ Por ejemplo, yo reconozco que a mi [este vídeo](https://www.youtube.com/watch?v
 Plantea cuestiones sobre las que nosotros hemos construido los compromisos de la candidatura [Capafons2015](http://web.archive.org/web/20150415003659/http://www.capafons2015.es:80/).
 Entonces ¿por qué no admitirlo y construir sobre lo que tenemos en común el diálogo? aunque después discrepemos en que en su entorno no tienen a las personas adecuadas para cumplir con estos compromisos.
 
-{{< figure src="/posts/capafons2015-es-tiempo-de-cambio/images/1.jpg" >}}
+{{< figure src="images/1.jpg" >}}
 
 Sin duda es tiempo de cambio.
 **Tiempo de que se acabe el _"¿qué hay de lo mio?"_ para empezar a pensar en la institución de la que todos ---estudiantes, profesorado, PAS y la sociedad que nos observa, nos sostiene y a quién nos debemos--- formamos parte**.

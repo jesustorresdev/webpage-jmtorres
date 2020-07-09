@@ -7,9 +7,9 @@ tags:
  - Creative Commnons
  - Experto RRSS
 
-featuredImage: "/posts/creative-commons-como-herramienta-de-marketing/images/1.png" 
+featuredImage: "images/1.png" 
 images:
- - "/posts/creative-commons-como-herramienta-de-marketing/images/1.png" 
+ - "images/1.png" 
 
 aliases:
  - "/creative-commons-como-herramienta-de-marketing-f5a02a7b9b0c"

@@ -7,13 +7,13 @@ tags:
  - IoT
 
 images:
- - "/posts/diseñando-iot-en-la-revista-edn-europe/images/1.png" 
+ - "images/1.png" 
 
 aliases:
  - "/diseñando-iot-en-la-revista-edn-europe-8e14ef6934"
 ---
 
-{{< figure src="/posts/diseñando-iot-en-la-revista-edn-europe/images/1.png" >}}
+{{< figure src="images/1.png" >}}
 
 [EDN Europe](http://www.edn-europe.com/) ha publicado un artículo en cuatro partes sobre el diseño de la **Internet de las Cosas (IoT)**:
 

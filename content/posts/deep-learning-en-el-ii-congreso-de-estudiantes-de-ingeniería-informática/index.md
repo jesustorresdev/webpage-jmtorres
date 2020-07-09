@@ -9,9 +9,9 @@ tags:
  - IA
  - Universidad
 
-featuredImage: "/posts/deep-learning-en-el-ii-congreso-de-estudiantes-de-ingeniería-informática/images/featured.png" 
+featuredImage: "images/featured.png" 
 images:
- - "/posts/deep-learning-en-el-ii-congreso-de-estudiantes-de-ingeniería-informática/images/1.jpg" 
+ - "images/1.jpg" 
 
 aliases:
  - "/deep-learning-en-el-ii-congreso-de-estudiantes-de-ingenier%C3%ADa-informática-6c4734342051"
@@ -20,7 +20,7 @@ aliases:
 Esta tarde llegó a su fin el [II Congreso de Estudiantes de Ingeniería Informática de la Universidad de la Laguna](http://cesinf.webs.ull.es/) con el acto de clausura y la entrega de premios.
 Se que requiere un gran esfuerzo organizar una actividad como esta ---algo que hay que agradecer a [José Ignacio Estévez](https://twitter.com/nchbot), que me consta que se ha dejado la piel, y a su equipo de voluntarios--- pero sin duda creo que es muy enriquecedora para los estudiantes.
 
-{{< figure src="/posts/deep-learning-en-el-ii-congreso-de-estudiantes-de-ingeniería-informática/images/1.jpg" caption="Cartel del II Congreso de Estudiantes de Ingeniería Informática." >}}
+{{< figure src="images/1.jpg" caption="Cartel del II Congreso de Estudiantes de Ingeniería Informática." >}}
 
 Este congreso permite a los estudiantes que lo han querido exponer su trabajo ---doy fe de que los hay muy buenos y algunos incluso podrían tener impacto a nivel regional--- y los demás han podido ver lo que hacen sus compañeros; con apenas un curso o dos por delante de ellos.
 A mi eso me parece algo tremendamente motivador que incluso puede llevar a despertar algunas vocaciones.

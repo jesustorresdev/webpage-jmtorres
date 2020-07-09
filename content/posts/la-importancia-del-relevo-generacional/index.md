@@ -10,9 +10,9 @@ tags:
  - GULiC
  - Motivación
 
-featuredImage: "/posts/la-importancia-del-relevo-generacional/images/featured.jpg" 
+featuredImage: "images/featured.jpg" 
 images:
- - "/posts/la-importancia-del-relevo-generacional/images/1.jpg" 
+ - "images/1.jpg" 
 
 
 aliases:

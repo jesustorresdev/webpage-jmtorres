@@ -13,9 +13,9 @@ tags:
 series:
  - master-videojuegos-ull
 
-featuredImage: "/posts/post-mortem-del-máster-de-videojuegos-de-la-ull-parte-1/images/featured.jpeg" 
+featuredImage: "images/featured.jpeg" 
 images:
- - "/posts/post-mortem-del-máster-de-videojuegos-de-la-ull-parte-1/images/1.jpeg" 
+ - "images/1.jpeg" 
 
 aliases:
     - "/post-mortem-del-máster-de-videojuegos-de-la-ull-parte-1-c0c48b2305f8"
@@ -142,11 +142,11 @@ Para responder a quienes duden de la importancia de estar sometidos al escrutini
 La primera es que nuestro [Reglamento de Estudios Propios de Posgrado](http://www.gobcan.es/boc/2013/110/002.html) dice en su Artículo 20:
 
 > **Artículo 20.- Solicitud de reediciones.**
->
+> 
 > [...]
->
-> 3. En las solicitudes de reedición se reflejarán las modificaciones que se pretendan introducir en el plan de estudios, que no deberán superar el 20% del proyecto anterior.
->
+> 
+> 3\. En las solicitudes de reedición se reflejarán las modificaciones que se pretendan introducir en el plan de estudios, que no deberán superar el 20% del proyecto anterior.
+> 
 > Además, se adjuntará la siguiente documentación:
 >
 > a. La memoria académica (definitiva o provisional) del título correspondiente a la edición anterior.
@@ -178,4 +178,4 @@ De hecho me reafirmé en ese compromiso en una reunión con el Rector el 1 de ma
 
 Cómo es que el 20 de abril lo que se aprobaba en Consejo de Gobierno era un título propio presentado por un profesora, que parece que vino por fortuna a salvarnos de nuestro error, es lo que explicaré en la segunda parte.
 
-_(Parte 2, [_aquí_](/posts/post-mortem-del-máster-de-videojuegos-de-la-ull-parte-2/))_
+_(Parte 2, [_aquí_]({{< ref "/posts/post-mortem-del-máster-de-videojuegos-de-la-ull-parte-2" >}}))_

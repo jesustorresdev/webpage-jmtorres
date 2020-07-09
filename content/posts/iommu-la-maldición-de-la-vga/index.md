@@ -12,11 +12,11 @@ tags:
 series:
  - virtual-desktop
 
-featuredImage: "/posts/iommu-la-maldición-de-la-vga/images/featured.jpg" 
+featuredImage: "images/featured.jpg" 
 images:
- - "/posts/iommu-la-maldición-de-la-vga/images/1.jpg" 
- - "/posts/iommu-la-maldición-de-la-vga/images/2.png" 
- - "/posts/iommu-la-maldición-de-la-vga/images/3.jpg" 
+ - "images/1.jpg" 
+ - "images/2.png" 
+ - "images/3.jpg" 
 
 aliases:
  - "/iommu-la-maldici%C3%B3n-de-la-vga-cb016e0385a7"
@@ -24,7 +24,7 @@ aliases:
 
 _Voy a explicar el problema con las gráficas integradas Intel (IGD) y las gráficas discretas antiguas que no soportan UEFI cuando se intenta crear un escritorio virtual_
 _Este artículo corresponde a una serie donde se explica como montar un sistema de escritorio virtualizado, asignándole una GPU de forma exclusiva para obtener un rendimiento similar al de un sistema no virtualizado._
-_Si te has perdido la parte anterior, la tienes [aquí](https://medium.com/jmtorres/iommu-primer-asalto-7d342f7e77e5)._
+_Si te has perdido la parte anterior, la tienes [aquí]({{< ref "/posts/iommu-primer-asalto" >}})._
 
 ____
 
@@ -34,7 +34,7 @@ VGA es un estándar gráfico diseñado en 1987 y que aun hoy se sigue utilizando
 El estándar contempla muchas aspectos, pero para nosotros lo más relevante es cómo prevé que el resto del sistema tenga acceso a la tarjeta gráfica.
 
 
-{{< figure src="/posts/iommu-la-maldición-de-la-vga/images/1.jpg" caption="Conector VGA --- Swift.Hg, [Licencia CC-BY-SA-3.0](https://commons.wikimedia.org/wiki/File:Male_VGA_connector.jpg)" >}}
+{{< figure src="images/1.jpg" caption="Conector VGA --- Swift.Hg, [Licencia CC-BY-SA-3.0](https://commons.wikimedia.org/wiki/File:Male_VGA_connector.jpg)" >}}
 
 
 Toda tarjeta gráfica VGA tiene cierta cantidad de memoria de vídeo (VRAM).
@@ -52,7 +52,7 @@ El objeto de esto es que durante el arranque la BIOS del sistema ejecute el cód
 
 Las tarjetas gráficas modernas en buses PCI y PCIe son mucho más potentes que las antiguas tarjetas gráficas del estándar VGA, pero mantienen la compatibilidad hacia atrás.
 
-{{< figure src="/posts/iommu-la-maldición-de-la-vga/images/2.png" caption="Mapa de memoria del sistema." >}}
+{{< figure src="images/2.png" caption="Mapa de memoria del sistema." >}}
 
 Durante el arranque, a las tarjetas gráficas modernas se les asigna un rango de direcciones más grande para poder acceder a su memoria de vídeo.
 Sin embargo, también se les asigna el rango de `0xA0000` a `0xC0000` y la VBIOS también se mapea en la memoria.
@@ -82,7 +82,7 @@ Incluso es posible arrancar múltiples máquinas virtuales al mismo tiempo, cada
 Porque aunque todas necesiten utilizar el mismo rango de direcciones de la interfaz VGA, el sistema se encarga de evitar conflictos a través de lo que se llama el arbitraje VGA.
 Este componente del sistema anfitrión asigna el rango de direcciones VGA a una tarjeta o a la otra según se detecten intentos de acceso desde las máquinas virtuales, garantizando el acceso exclusivo de cada máquina virtual a su tarjeta a través del rango compartido de direcciones de la interfaz VGA, mientras sea necesario.
 
-Vistas toda estas particularidades, parece vidente que, tal y como comentamos en [la primera parte](/posts/iommu-primer-asalto), el _PCI passthrough_ de tarjetas gráficas es bastante más complejo que el de otro tipo de dispositivos.
+Vistas toda estas particularidades, parece vidente que, tal y como comentamos en [la primera parte]({{< ref "/posts/iommu-primer-asalto" >}}), el _PCI passthrough_ de tarjetas gráficas es bastante más complejo que el de otro tipo de dispositivos.
 Aun así, con el soporte adecuado por parte de la CPU y del software de virtualización, no deberíamos tener problema para tener varias tarjetas gráficas discretas y asignarlas a nuestras máquinas virtuales.
 
 ## Gráficas integradas Intel
@@ -99,7 +99,7 @@ Lamentablemente, la capacidad de desactivar el rango de la interfaz VGA no funci
 El único mecanismo posible para evitar conflictos, es desactivar el acceso del dispositivo al bus.
 Pero eso también desactiva el acceso a través del resto del rango de direcciones asignado al dispositivo y los controladores no pueden hacer su trabajo si el acceso al dispositivo se mantiene desactivado permanente.
 
-{{< figure src="/posts/iommu-la-maldición-de-la-vga/images/3.jpg" caption="Por lo tanto las IGD no pueden asignarse a ninguna máquina virtual." >}}
+{{< figure src="images/3.jpg" caption="Por lo tanto las IGD no pueden asignarse a ninguna máquina virtual." >}}
 
 Solo se pueden aprovechar como gráfica del sistema operativo anfitrión.
 Y, además, como acaparan el rango de direcciones VGA, es importante que las gráficas discretas asignadas a las máquinas virtuales no utilicen en ningún momento dicho rango.
@@ -107,4 +107,4 @@ Por eso, en este caso particular, es necesario que las máquinas virtuales arran
 
 Con esto aclarado, en futuras partes veremos como configurar un sistema de escritorio virtual con una GPU discreta, usando la IGD para el sistema anfitrión y empleado con _QEMU/KVM_ y _libvirt_.
 
-_(Parte 3, [aquí](/posts/escritorio-virtual-de-windows-10-parte-i))_
+_(Parte 3, [aquí]({{< ref "/posts/escritorio-virtual-de-windows-10-parte-i" >}}))_

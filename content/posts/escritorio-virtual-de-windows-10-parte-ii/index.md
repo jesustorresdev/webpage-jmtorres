@@ -13,21 +13,21 @@ series:
  - virtual-desktop
 
 images:
- - "/posts/escritorio-virtual-de-windows-10-parte-ii/images/12.png"
- - "/posts/escritorio-virtual-de-windows-10-parte-ii/images/13.png"
- - "/posts/escritorio-virtual-de-windows-10-parte-ii/images/14.png"
- - "/posts/escritorio-virtual-de-windows-10-parte-ii/images/15.png"
+ - "images/12.png"
+ - "images/13.png"
+ - "images/14.png"
+ - "images/15.png"
 ---
 
-_Vamos a ver algunos consejos para optimizar la máquina virtual creada en el [artículo anterior](/posts/escritorio-virtual-de-windows-10-parte-i)._
+_Vamos a ver algunos consejos para optimizar la máquina virtual creada en el [artículo anterior]({{< ref "/posts/escritorio-virtual-de-windows-10-parte-i" >}})._
 _Este artículo pertenece a una serie donde se explica como instalar Windows 10 en una máquina virtual asignándole una de las GPU del equipo de forma exclusiva, para obtener un rendimiento gráfico similar al que tendría en una máquina real._
-_Si te has perdido algún artículo anterior de esta historia, el primero lo tienes [aquí](/posts/iommu-primer-asalto)_.
+_Si te has perdido algún artículo anterior de esta historia, el primero lo tienes [aquí]({{< ref "/posts/iommu-primer-asalto" >}})_.
 
 ___
 
 Una vez apagada la máquina virtual, si seleccionamos en el menú el icono con una exclamación ---con el texto de ayuda {{< gui "Mostrar detalles del hardware virtual" >}}--- podemos ver la configuración definitiva y ajustarla.
 
-{{< figure src="/posts/escritorio-virtual-de-windows-10-parte-ii/images/12.png" caption="Hardware de la máquina virtual tras la instalación." >}}
+{{< figure src="images/12.png" caption="Hardware de la máquina virtual tras la instalación." >}}
 
 Podemos quitar las unidades CDROM o, en todo caso, dejar solo una por lo que pueda surgir.
 También se puede quitar el dispositivo tipo {{< gui "Serial" >}} y añadir uno de tipo {{< gui "Tableta" >}}.
@@ -106,7 +106,7 @@ En la configuración de memoria podemos configurar cuánta memoria pensará la m
 
 Por ejemplo, mi máquina virtual piensa que tiene 8GB de RAM pero el sistema anfitrión nunca le asignará más de 4GB de memoria.
 
-{{< figure src="/posts/escritorio-virtual-de-windows-10-parte-ii/images/13.png" caption="Configuración de la asignación de memoria." >}}
+{{< figure src="images/13.png" caption="Configuración de la asignación de memoria." >}}
 
 Desde el punto de vista del sistema operativo, la máquina virtual es un proceso más.
 Cuando se inicia, pide al sistema operativo la cantidad de memoria indicada en {{< gui "Asignación máxima">}} como memoria RAM para la máquina.
@@ -232,7 +232,7 @@ Así, si las cosas se ponen muy mal, no tendremos que volver a empezar desde cer
 Volvemos a la configuración de la máquina virtual, hacemos clic en {{< gui "+ Agregar hardware" >}} y seleccionamos {{< gui "Dispositivo PCI anfitrión" >}}. Hay que escoger la tarjeta gráfica que queremos asignar.
 En mi caso es el dispositivo que dice {{< gui "0000:01:00:0 NVIDIA Corporation GM206 [Geforce GTX 950]" >}}.
 
-{{< figure src="/posts/escritorio-virtual-de-windows-10-parte-ii/images/14.png" caption="Añadir la tarjeta gráfica como dispositivo PCI del anfitrión." >}}
+{{< figure src="images/14.png" caption="Añadir la tarjeta gráfica como dispositivo PCI del anfitrión." >}}
 
 Lo mismo se hace con el dispositivo justo debajo ---el `0000:01:00:1` --- que es la salida de audio digital de la tarjeta gráfica a través del conector HDMI. 
 A fin de cuentas, ambos dispositivos están en la misma tarjeta y no es conveniente asignar uno a la máquina virtual y el otro no.
@@ -388,7 +388,7 @@ Por último, hay que indicar a Windows que la frecuencia de muestreo por defecto
 El valor por defecto en Windows es 48000Hz.
 Si la frecuencia de muestro en Windows y en Linux no coincide, oiremos los sonidos distorsionados. Los pasos son:
 
-{{< figure src="/posts/escritorio-virtual-de-windows-10-parte-ii/images/15.png" caption="Configuración de la frecuencia de muestreo en Windows 10." >}}
+{{< figure src="images/15.png" caption="Configuración de la frecuencia de muestreo en Windows 10." >}}
 
 1. En la máquina virtual hay que buscar el icono del altavoz en la bandeja del sistema, hacer clic con el botón derecho del ratón y seleccionar {{< gui "Abrir Configuración de sonido" >}}.
 1. Hacer clic en {{< gui "Panel de control de sonido" >}}.

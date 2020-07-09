@@ -8,7 +8,7 @@ tags:
  - VR
 
 images:
- - "/posts/proyecto-liquid-galaxy/images/1.jpg" 
+ - "images/1.jpg" 
 
 aliases:
  - "/proyecto-liquid-galaxy-ac9e53041049"
@@ -23,7 +23,7 @@ Cada pantalla estaba conectada a un mini-PC Gigabyte donde se ejecutaba una copi
 Estos ordenadores estaban conectados a través de una red Ethernet Gigabit, de tal forma que trabajan de forma perfectamente sincronizada.
 El ordenador de la pantalla central podía ser manejado por el usuario tanto con un sensor [Leap Motion](https://www.leapmotion.com/) como con un ratón 3D [SpaceNavigator](http://www.3dconnexion.es/products/spacenavigator.html), que se comunicaba con el resto de equipos para crear un sensación espectacular, como si fueran uno solo.
 
-{{< figure src="/posts/proyecto-liquid-galaxy/images/1.jpg" caption="Ratón 3D SpaceNavigator de 3Dconnection --- vía [AmericanXplorer13~commonswiki](https://commons.wikimedia.org/wiki/User:AmericanXplorer13~commonswiki), License [CC-BY-SA-2.5](https://creativecommons.org/licenses/by-sa/2.5/)" >}}
+{{< figure src="images/1.jpg" caption="Ratón 3D SpaceNavigator de 3Dconnection --- vía [AmericanXplorer13~commonswiki](https://commons.wikimedia.org/wiki/User:AmericanXplorer13~commonswiki), License [CC-BY-SA-2.5](https://creativecommons.org/licenses/by-sa/2.5/)" >}}
 
 El asunto parecía interesante con vistas a crear simuladores de vuelo y cosas parecidas y la verdad es que tenía curiosidad por saber el porqué de usar 5 ordenadores y no uno sólo con soporte para 5 pantallas, ya que aunque no soy un experto se que las tarjetas AMD con tecnología [Eyefinity](http://www.amd.com/en-us/innovations/software-technologies/technologies-gaming/eyefinity) permiten usar hasta 6 monitores con conexión DisplayPort.
 

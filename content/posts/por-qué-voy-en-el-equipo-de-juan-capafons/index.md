@@ -7,10 +7,10 @@ toc: false
 tags:
  - Universidad
 
-featuredImage: "/posts/por-qué-voy-en-el-equipo-de-juan-capafons/images/featured.jpg" 
+featuredImage: "images/featured.jpg" 
 images:
- - "/posts/por-qué-voy-en-el-equipo-de-juan-capafons/images/1.jpg" 
- - "/posts/por-qué-voy-en-el-equipo-de-juan-capafons/images/2.jpg" 
+ - "images/1.jpg" 
+ - "images/2.jpg" 
 
 aliases:
  - "/por-qué-voy-en-el-equipo-de-juan-capafons-1d4ca912907c"
@@ -30,7 +30,7 @@ Y eso, a lo largo de varios años, acaba agotando a cualquiera.
 Así que no me extraña que muchos se pregunten qué es lo que ha cambiado.
 Qué es lo que me ha llevado, no ya a continuar, sino a pasar de segunda a primera fila, junto a un equipo fantástico, muy preparado e ilusionadísimo por trabajar por el presente y el futuro de nuestra universidad, bajo la dirección de [Juan Capafons](http://web.archive.org/web/20150415003659/http://www.capafons2015.es:80/).
 
-{{< figure src="/posts/por-qué-voy-en-el-equipo-de-juan-capafons/images/1.jpg" caption="El equipo de la candidatura al completo." >}}
+{{< figure src="images/1.jpg" caption="El equipo de la candidatura al completo." >}}
 
 Nunca he tenido aspiraciones políticas, ni en la universidad ni fuera.
 
@@ -55,7 +55,7 @@ Por eso cuando [Juan Capafons](http://web.archive.org/web/20150415003659/http://
 Dije que no podía.
 Realmente no sé ni cuantas veces le dije que no, hasta que conocí al equipo y me explicaron el proyecto.
 
-{{< figure src="/posts/por-qué-voy-en-el-equipo-de-juan-capafons/images/2.jpg" caption="En una de las muchas reuniones de trabajo con el equipo de la candidatura." >}}
+{{< figure src="images/2.jpg" caption="En una de las muchas reuniones de trabajo con el equipo de la candidatura." >}}
 
 Alguien con mis convicciones siempre encuentra de sumo interés aquellos proyectos que desde el primer momento se construyen sobre la base de la transparencia, la equidad, la colaboración y el consenso.
 

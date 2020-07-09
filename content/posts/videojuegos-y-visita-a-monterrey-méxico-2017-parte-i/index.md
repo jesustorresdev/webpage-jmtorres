@@ -11,14 +11,13 @@ tags:
 series:
  - méxico-2017
 
-featuredImage: "/posts/videojuegos-y-visita-a-monterrey-méxico-2017-parte-i/images/featured.jpeg" 
+featuredImage: "images/featured.jpeg" 
 images:
- - "/posts/videojuegos-y-visita-a-monterrey-méxico-2017-i/images/1.jpeg" 
- - "/posts/videojuegos-y-visita-a-monterrey-méxico-2017-i/images/2.jpeg" 
- - "/posts/videojuegos-y-visita-a-monterrey-méxico-2017-i/images/3.jpeg" 
- - "/posts/videojuegos-y-visita-a-monterrey-méxico-2017-i/images/4.jpeg" 
- - "/posts/videojuegos-y-visita-a-monterrey-méxico-2017-i/images/5.jpeg" 
-
+ - "images/1.jpeg" 
+ - "images/2.jpeg" 
+ - "images/3.jpeg" 
+ - "images/4.jpeg" 
+ - "images/5.jpeg" 
 
 aliases:
  - "/videojuegos-y-visita-a-monterrey-méxico-2017-i-22a96d82bc57"
@@ -62,13 +61,13 @@ La [Universidad Autónoma de Nuevo León](https://es.wikipedia.org/wiki/Universi
 Visitamos la Facultad de Ingeniería Mecánica y Eléctrica que tiene unos 17000 alumnos.
 Es decir, que el centro tiene por si mismo el tamaño de toda la ULL.
 
-{{< figure src="/posts/videojuegos-y-visita-a-monterrey-méxico-2017-parte-i/images/1.jpeg" caption="Jorge y yo en la Universidad Autónoma de Nuevo León (UANL)." >}}
+{{< figure src="images/1.jpeg" caption="Jorge y yo en la Universidad Autónoma de Nuevo León (UANL)." >}}
 
 Pasamos allí unos días viendo proyectos interesantes relacionados con las aplicaciones de la realidad virtual y la realidad aumentada.
 Algunos se engloban dentro de tesis doctorales que están dirigiendo compañeros de la ULL.
 Por ejemplo, experiencias de realidad virtual aplicadas a la rehabilitación o al entrenamiento en simulacros virtuales para hacer frente a incendios, terremotos y otros desastres.
 
-{{< figure src="/posts/videojuegos-y-visita-a-monterrey-méxico-2017-parte-i/images/2.jpeg" caption="Probando el desarrollo de una tesis dirigida en la ULL." >}}
+{{< figure src="images/2.jpeg" caption="Probando el desarrollo de una tesis dirigida en la ULL." >}}
 
 Los días que estuvimos allí se organizaba el [4º Congreso Internacional y 12º Coloquio de Proyectos Institucionales y de Vinculación](http://www.congresointernacionalpiv.com/), donde se presentan trabajos y se organizan múltiples conferencias y talleres.
 En un taller sobre Unity ---en el que nos dieron la oportunidad de hablar del máster de la ULL--- se presentó la [Maestría en Producción y Desarrollo de Videojuegos](http://www.spentagameinstitute.org/) del Instituto de Estudio Superiores de Sepenta México.
@@ -79,7 +78,7 @@ Una propuesta diferente y muy interesante de la que sin duda conviene tomar nota
 En los últimos días de estancia pudimos darnos un salto por la Facultad de Ciencias Físico Matemáticas donde imparten la [Licenciatura en Multimedia y Animación Digital](http://www.uanl.mx/content/licenciatura-en-multimedia-y-animacion-digital) (LMAD).
 Al final de cada semestre organizan una feria donde los estudiantes exponen los proyectos que han realizado durante el mismo.
 
-{{< figure src="/posts/videojuegos-y-visita-a-monterrey-méxico-2017-parte-i/images/3.jpeg" caption="En la EXPO LMAD, junto al Coordinador M.C. Rafael Rosas y la Dra. Leticia Neira." >}}
+{{< figure src="images/3.jpeg" caption="En la EXPO LMAD, junto al Coordinador M.C. Rafael Rosas y la Dra. Leticia Neira." >}}
 
 Nosotros tuvimos la suerte de poder estar allí y me encantó.
 Fue una mezcla entre el subidón, por disfrutar junto a los estudiantes de trabajos tan buenos, y envidia sana, por no tener algo así por aquí.
@@ -90,7 +89,7 @@ Por lo que nos contaron, tienen asignaturas generales ---como Programación or
 Así que te acercas a ver un proyecto desarrollado en una asignatura dedicada al desarrollo web y acabas disfrutando de pequeñas joyas como [Byte Shifter](https://panicjoker03.github.io/ByteShifter/) .
 ¿He dicho ya que nos lo pasamos muy bien? :smile:
 
-{{< figure src="/posts/videojuegos-y-visita-a-monterrey-méxico-2017-parte-i/images/4.jpeg" caption="Ametrallando de lo lindo en la EXPO LMAD." >}}
+{{< figure src="images/4.jpeg" caption="Ametrallando de lo lindo en la EXPO LMAD." >}}
 
 Fue una pena no sacar fotos de todo porque ahora es difícil acordarse de cada proyecto.
 De hecho, se que se me queda alguno muy bueno, que estuve probando durante un buen rato, en el tintero.
@@ -101,7 +100,7 @@ Había un simulador de un tanque, un coche de carreras, una bicicleta de montañ
 En todas las experiencias habían dispositivos hápticos desarrollados por los propios alumnos.
 Por ejemplo, la ametralladora utilizaba un motor desequilibrado para simular la vibración y el retroceso, mientras dejabas hecho un colador todo lo que tenías frente a la pantalla.
 
-{{< figure src="/posts/videojuegos-y-visita-a-monterrey-méxico-2017-parte-i/images/5.jpeg" caption="En el simulador de carreras FeeLive. El asiento llevaba actuadores para inclinar levemente el asiento según el caso." >}}
+{{< figure src="images/5.jpeg" caption="En el simulador de carreras FeeLive. El asiento llevaba actuadores para inclinar levemente el asiento según el caso." >}}
 
 Los estudiantes repartían trípticos donde explicaban las virtudes de sus proyectos, como si de una feria comercial cualquiera se tratara.
 También grababan videos con entrevistas para Youtube y algunos hasta habían hecho una aplicación promocional de realidad aumentada para el móvil, como fue el caso del simulador de carreras FeeLive.
@@ -119,4 +118,4 @@ Además, nos dimos un salto por Ciudad de México para ir a la [Universidad Aut�
 Pero esto me está quedado más largo de lo que pensaba.
 Así que por el momento pararé aquí y así me obligo a escribir una segunda parte.
 
-_(Parte 2, [aquí](/posts/visita-a-monterrey-méxico-2017-parte-ii))_
+_(Parte 2, [aquí]({{< ref "/posts/visita-a-monterrey-méxico-2017-parte-ii" >}}))_

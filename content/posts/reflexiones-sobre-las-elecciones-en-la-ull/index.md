@@ -7,8 +7,7 @@ tags:
  - Universidad
 
 images:
- - "/posts/reflexiones-sobre-las-elecciones-en-la-ull/images/1.jpg" 
-
+ - "images/1.jpg" 
 
 aliases:
  - "/reflexiones-sobre-las-elecciones-en-la-ull-89f7c184264d"
@@ -30,7 +29,7 @@ Al margen de nuestras preferencias, deberíamos ser capaces de analizar de la fo
 Y esto, que son buenas cualidades para cualquiera de nosotros, son características fundamentales para quienes aspiran a ser gestores de una institución como la nuestra.
 A fin de cuentas eso es lo que nos han prometido, ya que no hay candidatura que no haya enarbolado hasta la saciedad la bandera de ser la más participativa, transparente e incluyente de todas las presentadas.
 
-{{< figure src="/posts/reflexiones-sobre-las-elecciones-en-la-ull/images/1.jpg" caption="Ubuntu: Yo soy porque nosotros somos." >}}
+{{< figure src="images/1.jpg" caption="Ubuntu: Yo soy porque nosotros somos." >}}
 
 Pero si realmente todos fuéramos tan incluyentes y quisiéramos el mejor equipo para la [ULL](http://www.ull.es/) no hubiera visto las cosas que he visto ni hubiera mantenido las conversaciones que he mantenido.
 Hubiéramos hablado de la idoneidad de los candidatos para la gestión y para dirigir sus equipos, de la idoneidad de las personas que conforman esos equipos, incluso en segundos niveles ---lamentablemente, aunque lo hayan intentado ocultar, algunas candidaturas ya habían vendido todo el pescado, en cierta medida como una forma de asegurarse los apoyos necesarios--- de estrategias, de propuestas, de proyectos y de la visión de los equipos sobre la gestión universitaria.

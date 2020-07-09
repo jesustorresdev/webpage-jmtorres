@@ -9,7 +9,7 @@ tags:
  - Experto RRSS
 
 images:
- - "/posts/crowdfunding-en-españa/images/1.jpg" 
+ - "images/1.jpg" 
 
 aliases:
  - "/crowdfunding-en-espa%C3%B1a-c615f2e1abf0"
@@ -19,7 +19,7 @@ Después de un invierno movidito ---entre gripes y alertas máximas--- la se
 Para esta edición extraje lo referente a los modelos de negocio del software y la cultura libre del primer tema, incorporándolo en uno nuevo sobre modelos de negocio P2P.
 Así que tuve que elaborar una nueva [presentación](http://jmtorres.webs.ull.es/slides/modelos_de_negocio_p2p/) a partir de la extensa documentación de la [P2P Foundation](http://p2pfoundation.net/Category:Business_Models).
 
-{{< figure src="/posts/crowdfunding-en-españa/images/1.jpg" caption="Crowdfunding Scene --- [Dfbeltranp](https://commons.wikimedia.org/w/index.php?title=User:Dfbeltranp&action=edit&redlink=1), License [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en)" >}}
+{{< figure src="images/1.jpg" caption="Crowdfunding Scene --- [Dfbeltranp](https://commons.wikimedia.org/w/index.php?title=User:Dfbeltranp&action=edit&redlink=1), License [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en)" >}}
 
 Obviamente no se puede hablar de estos temas sin tratar el asunto del _crowdfunding_ y nada mejor para ilustrarlo que enlazar [algunos ejemplo](http://jmtorres.webs.ull.es/slides/modelos_de_negocio_p2p/#/4/3)s, preferentemente nacionales.
 Esto es sencillo en el caso del crowdfunding basado en donaciones y recompensas ya que tenemos dos casos muy claros: [Lánzanos](http://www.lanzanos.com/) y [Goteo](http://www.goteo.org/).

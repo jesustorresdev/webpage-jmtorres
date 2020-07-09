@@ -11,15 +11,15 @@ tags:
 series:
  - méxico-2017
 
-featuredImage: "/posts/visita-a-monterrey-méxico-2017-parte-ii/images/featured.jpeg" 
+featuredImage: "images/featured.jpeg" 
 images:
- - "/posts/visita-a-monterrey-méxico-2017-y-ii/images/1.jpeg" 
- - "/posts/visita-a-monterrey-méxico-2017-y-ii/images/2.png" 
- - "/posts/visita-a-monterrey-méxico-2017-y-ii/images/3.jpeg" 
- - "/posts/visita-a-monterrey-méxico-2017-y-ii/images/4.jpeg" 
- - "/posts/visita-a-monterrey-méxico-2017-y-ii/images/5.jpeg" 
- - "/posts/visita-a-monterrey-méxico-2017-y-ii/images/6.jpeg" 
- - "/posts/visita-a-monterrey-méxico-2017-y-ii/images/7.jpeg" 
+ - "images/1.jpeg" 
+ - "images/2.png" 
+ - "images/3.jpeg" 
+ - "images/4.jpeg" 
+ - "images/5.jpeg" 
+ - "images/6.jpeg" 
+ - "images/7.jpeg" 
 
 
 aliases:
@@ -29,7 +29,7 @@ aliases:
 _Voy a continuar comentando la estancia que hicimos a finales del año pasado en algunas universidades mexicanas para colaborar y coger ideas ---e inflarnos a estupenda comida mexicana---._
 _¿Te has perdido la parte anterior?._
 _No te preocupes._
-_Si te interesa, la tienes [aquí](/posts/videojuegos-y-visita-a-monterrey-méxico-2017-i/)._
+_Si te interesa, la tienes [aquí]({{< ref "/posts/videojuegos-y-visita-a-monterrey-méxico-2017-parte-i" >}})._
 
 ## Segunda parada: La UDEM
 
@@ -41,7 +41,7 @@ Al graduarse, cada estudiante tiene en su haber al menos 3 cortos, de los que ha
 Nosotros mismos tuvimos la suerte de ser invitados a la presentación de los proyectos del semestre que finalizaba.
 Los trabajos presentados, tanto en animación 2D como 3D, eran fantásticos.
 
-{{< figure src="/posts/visita-a-monterrey-méxico-2017-parte-ii/images/1.jpeg" caption="Jorge y yo en la Universidad de Monterrey (UDEM)." >}}
+{{< figure src="images/1.jpeg" caption="Jorge y yo en la Universidad de Monterrey (UDEM)." >}}
 
 Lamentablemente, no tengo evidencias de lo que vi.
 Buscando en Internet solo he encontrado [este artículo con un minúsculo pedazo del corto Midnight Runway](http://a.com.mx/midnight-runway/) hecho por estudiantes de LAED.
@@ -54,7 +54,7 @@ Por ejemplo, el equipo detrás de Gravity Dream nos dejó probar su proyecto, qu
 O el fantástico trabajo del equipo de "Rio de Sueños", una aventura en formato realidad virtual para Oculus Rift inspirada en la obra de Gabriel García Márquez, que me dejó un muy bien sabor de boca en el rato que pude probarla.
 De hecho, no solté la demo hasta no terminar el nivel completo.
 
-{{< figure src="/posts/visita-a-monterrey-méxico-2017-parte-ii/images/2.png" caption="\"Rio de Sueños\" por Mariana Ávila Lagunes (LAED ’17), Ileana Sada Velázquez (LAED ’17) y Marianna Lopez Guajardo (LAED ’17)." >}}
+{{< figure src="images/2.png" caption="\"Rio de Sueños\" por Mariana Ávila Lagunes (LAED ’17), Ileana Sada Velázquez (LAED ’17) y Marianna Lopez Guajardo (LAED ’17)." >}}
 
 Dos de sus creadoras hablando de "Rio de Sueños" a estudiantes actuales de la UDEM.
 
@@ -72,7 +72,7 @@ Nos habían invitado a dar unas conferencias.
 Sin embargo, lo más interesante fue asistir a la presentación de un trabajo final de la Maestría en Diseño, Información y Comunicación que consistía en una propuesta transmedia para incentivar la lectura entre los niños.
 Un juego de realidad virtual para _cardboard_ basado en el libro ["El Enigma del Hoyo en el Pantalón" de Armando Vega-Gil](https://www.goodreads.com/book/show/28404393-el-enigma-del-hoyo-en-el-pantal-n) ---publicado por Ediciones SM---.
 
-{{< figure src="/posts/visita-a-monterrey-méxico-2017-parte-ii/images/3.jpeg" caption="En la UAM con parte del equipo del proyecto." >}}
+{{< figure src="images/3.jpeg" caption="En la UAM con parte del equipo del proyecto." >}}
 
 La [Maestría en Diseño, Información y Comunicación](http://dccd.cua.uam.mx/Maestria_en_Diseno_Informacion_y_Comunicacion) (MADIC) es un posgrado interdisciplinar al que acceden graduados de diseño, sistemas computacionales (informática) y comunicación.
 Eso da lugar a proyectos como este, donde estudiantes de ámbitos distintos colaboraran integrando conocimientos y perspectivas diferentes para resolver un problema común.
@@ -93,14 +93,14 @@ En el primero pudimos probar un interesante proyecto donde se desarrollan juegos
 
 Mientras que en el segundo visitamos las instalaciones del TEC en Monterrey, donde vimos ideas muy interesantes.
 
-{{< figure src="/posts/visita-a-monterrey-méxico-2017-parte-ii/images/4.jpeg" caption="Espacio con mobiliario móvil en el TEC." >}}
+{{< figure src="images/4.jpeg" caption="Espacio con mobiliario móvil en el TEC." >}}
 
 Por ejemplo, los espacios con mobiliario móvil.
 Algo que podríamos incorporar sin demasiado coste, para facilitar el aprendizaje basado en proyectos y los trabajos en grupo.
 Allí esto se ha llevado incluso a las aulas de docencia.
 No tengo fotos, pero es fácil encontrar [algunas en Internet](https://www.google.es/search?client=ubuntu&tbm=isch&q=tecnol%C3%B3gico+monterrey+aula+mobiliario+m%C3%B3vil&spell=1&sa=X&ved=0ahUKEwjTz8zWvLXaAhWL6xQKHbOrBMEQBQgkKAA&biw=1920&bih=904&dpr=1).
 
-{{< figure src="/posts/visita-a-monterrey-méxico-2017-parte-ii/images/5.jpeg" caption="Espacio de innovación en el TEC." >}}
+{{< figure src="images/5.jpeg" caption="Espacio de innovación en el TEC." >}}
 
 Otra idea interesante es disponer de espacios abiertos donde los estudiantes puedan trabajar en sus propias ideas y proyectos.
 Hablo tanto de espacios donde sentarse, discutir y trabajar sin restricciones como pequeños talleres con herramientas para crear prototipos de sus ideas.
@@ -109,8 +109,8 @@ Esto no es nuevo.
 Creo que lo puse sobre la mesa en mi pequeñísima aportación al Plan Estratégico del Servicio de Biblioteca de la ULL.
 Y es algo por lo que en alguna ocasión me ha preguntado algún estudiante.
 
-{{< figure src="/posts/visita-a-monterrey-méxico-2017-parte-ii/images/6.jpeg" >}}
-{{< figure src="/posts/visita-a-monterrey-méxico-2017-parte-ii/images/7.jpeg" caption="Impresoras 3D, fresadora y CNC disponibles para los alumnos." >}}
+{{< figure src="images/6.jpeg" >}}
+{{< figure src="images/7.jpeg" caption="Impresoras 3D, fresadora y CNC disponibles para los alumnos." >}}
 
 ## Reflexión final
 

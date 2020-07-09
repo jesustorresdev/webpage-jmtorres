@@ -12,11 +12,11 @@ tags:
 series:
  - virtual-desktop
 
-featuredImage: "/posts/iommu-primer-asalto/images/featured.png" 
+featuredImage: "images/featured.png" 
 images:
- - "/posts/iommu-primer-asalto/images/1.png" 
- - "/posts/iommu-primer-asalto/images/2.png" 
- - "/posts/iommu-primer-asalto/images/3.png" 
+ - "images/1.png" 
+ - "images/2.png" 
+ - "images/3.png" 
 
 
 aliases:
@@ -37,7 +37,7 @@ Todas CPU modernas de propósito general disponen de una unidad de gestión de l
 Una de sus funciones es traducir las direcciones de memoria manejadas por la CPU ---generalmente llamadas direcciones virtuales--- en las direcciones físicas que verán los módulos de la memoria principal cuando sean accedidos.
 Esto permite a los sistemas operativos modernos aislar a unos procesos de otros, como si para cada uno crearan la ilusión de que están solos en el sistema y que toda la memoria es sólo para ellos.
 
-{{< figure src="/posts/iommu-primer-asalto/images/1.png" caption="Relación entre espacio de dirección virtual y espacio de direcciones físico --- [Dysprosia](https://en.wikipedia.org/wiki/User:Dysprosia), [License BSD](https://commons.wikimedia.org/wiki/File:Virtual_address_space_and_physical_address_space_relationship.png)" >}}
+{{< figure src="images/1.png" caption="Relación entre espacio de dirección virtual y espacio de direcciones físico --- [Dysprosia](https://en.wikipedia.org/wiki/User:Dysprosia), [License BSD](https://commons.wikimedia.org/wiki/File:Virtual_address_space_and_physical_address_space_relationship.png)" >}}
 
 
 Por otro lado la memoria RAM no es lo único que puede ser accedido mediante el direccionamiento de la memoria principal.
@@ -53,7 +53,7 @@ El problema es que se debe indicar a los dispositivos en qué direcciones físic
 Sin saber en qué direcciones físicas las transformará la MMU, es imposible que un proceso le indique a un dispositivo de E/S que haga una operación con acceso directo a memoria.
 Es aquí donde entra en juego la IOMMU, que fue introducida en 2011 en los procesadores de la familia x86.
 
-{{< figure src="/posts/iommu-primer-asalto/images/2.png" caption="MMU e IOMMU --- [DTR](https://commons.wikimedia.org/wiki/User:DTR), Dominio público" >}}
+{{< figure src="images/2.png" caption="MMU e IOMMU --- [DTR](https://commons.wikimedia.org/wiki/User:DTR), Dominio público" >}}
 
 La IOMMU es una unidad de gestión de la memoria, similar a la MMU, que se sitúa entre un bus de E/S y la memoria.
 Al igual que la MMU mapea las direcciones virtuales visibles para la CPU en las direcciones físicas visibles para la memoria, la IOMMU traduce las direcciones virtuales visibles para los dispositivos de E/S en direcciones físicas de la memoria.
@@ -87,7 +87,7 @@ Ese fue mi caso, que adquirí un Intel Core i7 2600K con la absurda esperanza de
 Lamentablemente ninguno de los modelos desbloqueados de la familia Sandy Bridge en aquel entonces soportaban VT-d.
 Esto, aunque común, no es una norma, pues posteriormente ha ido apareciendo algunos procesadores K con soporte VT-d tanto en Sandy Bridge como en familias posteriores.
 
-{{< figure src="/posts/iommu-primer-asalto/images/3.png" >}}
+{{< figure src="images/3.png" >}}
 
 Incluso teniendo una CPU con soporte hay que tener presente que algunos modelos tienen sus singularidades.
 Por ejemplo, activar IOMMU en un procesador Sandy Bridge puede ocasionar una [caída importante del rendimiento que no se aprecia en otras familias de procesadores Intel](http://permalink.gmane.org/gmane.comp.networking.dpdk.devel/7409).

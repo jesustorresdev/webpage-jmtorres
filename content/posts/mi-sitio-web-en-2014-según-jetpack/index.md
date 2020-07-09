@@ -7,9 +7,9 @@ toc: false
 tags:
  - Blog
  
-featuredImage: "/posts/mi-sitio-web-en-2014-según-jetpack/images/featured.jpg" 
+featuredImage: "images/featured.jpg" 
 images:
- - "/posts/mi-sitio-web-en-2014-según-jetpack/images/1.jpg" 
+ - "images/1.jpg" 
 
 aliases:
  - "/mi-sitio-web-en-2014-seg%C3%BAn-jetpack-77ad951b3996"

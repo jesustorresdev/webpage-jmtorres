@@ -12,19 +12,19 @@ tags:
 series:
  - virtual-desktop
 
-featuredImage: "/posts/escritorio-virtual-de-windows-10-parte-i/images/featured.png"
+featuredImage: "images/featured.png"
 images:
- - "/posts/escritorio-virtual-de-windows-10-parte-i/images/featured.png"
- - "/posts/escritorio-virtual-de-windows-10-parte-i/images/2.png"
- - "/posts/escritorio-virtual-de-windows-10-parte-i/images/3.png"
- - "/posts/escritorio-virtual-de-windows-10-parte-i/images/4.png"
- - "/posts/escritorio-virtual-de-windows-10-parte-i/images/5.png"
- - "/posts/escritorio-virtual-de-windows-10-parte-i/images/6.png"
- - "/posts/escritorio-virtual-de-windows-10-parte-i/images/7.png"
- - "/posts/escritorio-virtual-de-windows-10-parte-i/images/8.png"
- - "/posts/escritorio-virtual-de-windows-10-parte-i/images/9.png"
- - "/posts/escritorio-virtual-de-windows-10-parte-i/images/10.png"
- - "/posts/escritorio-virtual-de-windows-10-parte-i/images/11.png"
+ - "images/featured.png"
+ - "images/2.png"
+ - "images/3.png"
+ - "images/4.png"
+ - "images/5.png"
+ - "images/6.png"
+ - "images/7.png"
+ - "images/8.png"
+ - "images/9.png"
+ - "images/10.png"
+ - "images/11.png"
 
 aliases:
  - "/iommu-virtualizando-windows-10-9afb7c01c358"
@@ -32,7 +32,7 @@ aliases:
 
 _Este artículo pertenece a una serie donde se explica como instalar Windows 10 en una máquina virtual asignándole una de las GPU del equipo de forma exclusiva, para obtener un rendimiento gráfico similar al que tendría en una máquina real._
 _En esta parte veremos como crear la máquina virtual e instalar Windows 10._
-_Si te has perdido algún artículo anterior de esta historia, el primero lo tienes [aquí](/posts/iommu-primer-asalto) y el segundo [aquí](/posts/iommu-la-maldición-de-la-vga)_.
+_Si te has perdido algún artículo anterior de esta historia, el primero lo tienes [aquí]({{< ref "/posts/iommu-primer-asalto" >}}) y el segundo [aquí]({{< ref "/posts/iommu-la-maldición-de-la-vga" >}})_.
 
 ___
 
@@ -74,7 +74,7 @@ Sin embargo, actualmente no debería haber ningún problema con la versión de _
 
 ## Activar IOMMU
 
-Lo primero es activar el soporte de [IOMMU](/posts/iommu-primer-asalto-7d342f7e77e5) en el núcleo.
+Lo primero es activar el soporte de [IOMMU]({{< ref "/posts/iommu-primer-asalto" >}}) en el núcleo.
 Para eso editamos `/etc/default/grub` y añadimos `intel_iommu=on` a la variable `GRUB_CMDLINE_LINUX_DEFAULT`.
 Después ejecutamos:
 
@@ -139,7 +139,7 @@ lspci -nn
 
 El resultado será similar al de la siguiente imagen. La línea marcada corresponde con la tarjeta gráfica, instada en mi ordenador, que quiero usar con la máquina virtual:
 
-{{< figure src="/posts/escritorio-virtual-de-windows-10-parte-i/images/2.png" caption="Ejemplo de ejecutar el comando \"lspci -nn\"." >}}
+{{< figure src="images/2.png" caption="Ejemplo de ejecutar el comando \"lspci -nn\"." >}}
 
 El texto `[10de:1002]` del final de la línea marcada nos indica que el fabricante de esa tarjeta gráfica tiene el identificador `0x10DE` y que el modelo se identifica como `0x1402`.
 Así que para registrar esta tarjeta habría que indicarle al controlador VFIO estos identificadores de la siguiente manera:
@@ -312,15 +312,15 @@ Seleccionamos la opción de menú {{< gui "Archivo/Nueva máquina virtual">}}, s
   En ese caso elegimos {{< gui "Seleccionar o crear almacenaje personalizado" >}} y le pedimos crear un nuevo volumen.
   Nos dejará escoger el nombre del archivo, formato y tamaño.
 
-{{< figure src="/posts/escritorio-virtual-de-windows-10-parte-i/images/3.png" caption="Crear un volumen del almacenamiento en formato \"raw\"." >}}
+{{< figure src="images/3.png" caption="Crear un volumen del almacenamiento en formato \"raw\"." >}}
 
 En la última ventana marcamos {{< gui "Personalizar antes de instalar" >}} y finalmente le damos un nombre.
 
-{{< figure src="/posts/escritorio-virtual-de-windows-10-parte-i/images/4.png" caption="Último paso en el asistente de creación de la máquina virtual." >}}
+{{< figure src="images/4.png" caption="Último paso en el asistente de creación de la máquina virtual." >}}
 
 Al pulsar en finalizar se abre la ventana de detalles de la nueva máquina virtual.
 
-{{< figure src="/posts/escritorio-virtual-de-windows-10-parte-i/images/5.png" caption="Detalles generales de configuración antes de iniciar la instalación." >}}
+{{< figure src="images/5.png" caption="Detalles generales de configuración antes de iniciar la instalación." >}}
 
 Seleccionamos el firmware UEFI, en lugar de BIOS, y el modelo del _chipset_.
 La configuración más segura es con [i440FX](https://es.wikipedia.org/wiki/Intel_440FX).
@@ -332,7 +332,7 @@ Por ejemplo, si queremos instalar una máquina virtual con macOS.
 
 Aceptamos y avanzamos a la configuración de las CPU:
 
-{{< figure src="/posts/escritorio-virtual-de-windows-10-parte-i/images/6.png" caption="Detalles sobre la configuración de las CPU antes de iniciar la instalación." >}}
+{{< figure src="images/6.png" caption="Detalles sobre la configuración de las CPU antes de iniciar la instalación." >}}
 
 Aquí lo adecuado es indicar como modelo {{< gui "host-passthrough" >}}.
 Está opción no está en la lista desplegable, así que tendremos que escribirla a mano.
@@ -342,13 +342,13 @@ Además se puede modificar la topología, es decir, cómo se exponen las CPU a l
 
 Lo siguiente es modificar la configuración del disco duro principal: {{< gui "IDE Disco 1" >}}.
 
-{{< figure src="/posts/escritorio-virtual-de-windows-10-parte-i/images/7.png" caption="Detalles sobre la configuración del disco duro antes de iniciar la instalación." >}}
+{{< figure src="images/7.png" caption="Detalles sobre la configuración del disco duro antes de iniciar la instalación." >}}
 
 Por defecto _QEMU_ emula una interfaz IDE para el acceso al disco duro.
 Sin embargo se puede mejorar el rendimiento desplegando {{< gui "Opciones avanzadas" >}} y cambiando {{< gui "Bus de disco" >}} a SCSI.
 Luego se pulsa en {{< gui "Agregar hardware" >}} y se añade un {{< gui "Controlador" >}} del tipo {{< gui SCSI >}} y modelo {{< gui "VirtIO SCSI" >}}.
 
-{{< figure src="/posts/escritorio-virtual-de-windows-10-parte-i/images/8.png" caption="Añadir un controlador de disco VirtIO SCSI." >}}
+{{< figure src="images/8.png" caption="Añadir un controlador de disco VirtIO SCSI." >}}
 
 [VirtIO](https://es.wikibooks.org/wiki/QEMU/Dispositivos/Virtio) es una interfaz de disco paravirtualizada.
 Es decir, no emula una interfaz de disco real, como IDE o SCSI; sino que la máquina virtual sabe que es una interfaz por software diseñada para virtualización. El resultado es un mayor rendimiento.
@@ -357,7 +357,7 @@ Sin embargo Windows no sabe acceder a estos dispositivos si no se le proporciona
 Para que estos controladores estén disponibles necesitamos una segunda unidad de CDROM.
 Pulsamos en {{< gui "Agregar hardware" >}} y añadimos {{< gui "Almacenamiento" >}} de tipo de dispositivo CDROM y tipo de bus IDE.
 
-{{< figure src="/posts/escritorio-virtual-de-windows-10-parte-i/images/9.png" caption="Añadir una unidad de CDROM para los controladores VirtIO." >}}
+{{< figure src="images/9.png" caption="Añadir una unidad de CDROM para los controladores VirtIO." >}}
 
 Hay que indicar que use la imagen ISO con los controladores VirtIO.
 La última versión se puede descargar desde [aquí](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-virtio/).
@@ -366,12 +366,12 @@ Finalmente pulsamos en iniciar la instalación.
 
 Si el firmware UEFI no inicia la instalación sino que nos deja en una interfaz de línea de comandos como la siguiente:
 
-{{< figure src="/posts/escritorio-virtual-de-windows-10-parte-i/images/10.png" caption="Interfaz de línea de comandos de OVMF." >}}
+{{< figure src="images/10.png" caption="Interfaz de línea de comandos de OVMF." >}}
 
 tendremos que buscar y lanzar nosotros mismos el arranque del instalador, ubicado seguramente en 
 `FS0:\EFI\BOOT\BOOTX64`:
 
-{{< figure src="/posts/escritorio-virtual-de-windows-10-parte-i/images/11.png" caption="Pasos para localizar el arranque del instalado de la ISO de Windows." >}}
+{{< figure src="images/11.png" caption="Pasos para localizar el arranque del instalado de la ISO de Windows." >}}
 
 Llegados a este punto la instalación debería proceder con normalidad.
 Cuando nos pregunte dónde instalar Windows, pulsamos en la opción de {{< gui "Cargar controlador" >}}, buscamos la unidad de CDROM con los controladores VirtIO y navegamos por las carpetas hasta `viosci\w10\amd64`, para instalar los controladores de 64 bits para Windows 10.
@@ -380,4 +380,4 @@ Una vez instalado el controlador, el instalador nos dejará seleccionar el disco
 
 ___
 
-_En la [siguiente parte](/posts/escritorio-virtual-de-windows-10-parte-ii) veremos algunos ajustes interesantes para optimizar la máquina virtual y detalles adicionales para trabajar con el escritorio virtual de forma más cómoda._
+_En la [siguiente parte]({{< ref "/posts/escritorio-virtual-de-windows-10-parte-ii" >}}) veremos algunos ajustes interesantes para optimizar la máquina virtual y detalles adicionales para trabajar con el escritorio virtual de forma más cómoda._

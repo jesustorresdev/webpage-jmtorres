@@ -9,13 +9,13 @@ tags:
  - VR
  - Móvil
 
-featuredImage: "/posts/visor-de-realidad-virtual-diyvr/images/1.png" 
+featuredImage: "images/1.png" 
 images:
- - "/posts/visor-de-realidad-virtual-diyvr/images/1.png" 
- - "/posts/visor-de-realidad-virtual-diyvr/images/2.jpg" 
- - "/posts/visor-de-realidad-virtual-diyvr/images/3.jpg" 
- - "/posts/visor-de-realidad-virtual-diyvr/images/4.jpg" 
- - "/posts/visor-de-realidad-virtual-diyvr/images/5.jpg" 
+ - "images/1.png" 
+ - "images/2.jpg" 
+ - "images/3.jpg" 
+ - "images/4.jpg" 
+ - "images/5.jpg" 
 
 aliases:
  - "/visor-de-realidad-virtual-diyvr-b5cb09aab875"
@@ -44,7 +44,7 @@ El paquete que me llegó traía diversos elementos:
 * Una estructura de cartón para poder montar el visor en una gorra, evitando tener que sujetarlo con las manos.
 * Una gorra de DIYVR.
 
-{{< figure src="/posts/visor-de-realidad-virtual-diyvr/images/2.jpg" caption="Contenido del envío de DIVVR." >}}
+{{< figure src="images/2.jpg" caption="Contenido del envío de DIVVR." >}}
 
 El visor indica en el exterior de su caja el ancho y alto máximo que debe tener el móvil que se va a usar con él.
 En mi caso terminé de montarlo sin darme cuenta de que mi móvil excedía dicho ancho por medio centímetro.
@@ -61,7 +61,7 @@ De hecho a mi me pasó y tuve que corregir lo que pude posteriormente.
 Así que aunque la caja indique un tiempo de montaje de 2 min. yo creo que está mas cerca de los 20 min.
 Y es muy conveniente tener tijeras, cúter y pegamento de contacto por si es necesario hacer alguna corrección.
 
-{{< figure src="/posts/visor-de-realidad-virtual-diyvr/images/3.jpg" caption="Visor DOBOcase VR, gorra y estructura de cartón diseñada para sujetar el visor." >}}
+{{< figure src="images/3.jpg" caption="Visor DOBOcase VR, gorra y estructura de cartón diseñada para sujetar el visor." >}}
 
 En los mismos [vídeos](http://www.dodocase.com/pages/VRkit1) se indica cómo montar la estructura para la gorra.
 Básicamente se trata de un marco que facilita sujetar el visor DOBOcase VR a la visera de cualquier gorra.
@@ -70,7 +70,7 @@ En mi caso, para resolver el problema de tener un teléfono demasiado ancho para
 
 ## El visor de realidad virtual
 
-{{< figure src="/posts/visor-de-realidad-virtual-diyvr/images/4.jpg" caption="Perspectiva del visor DOBOcase VR donde se puede apreciar el botón mecánico (izquierda), la película metálica que contacta con la pantalla capacitiva del dispositivo (centro) y la pegatina NFC (debajo, con las letras DOBOcase)." >}}
+{{< figure src="images/4.jpg" caption="Perspectiva del visor DOBOcase VR donde se puede apreciar el botón mecánico (izquierda), la película metálica que contacta con la pantalla capacitiva del dispositivo (centro) y la pegatina NFC (debajo, con las letras DOBOcase)." >}}
 
 El visor funciona muy bien, es cómodo y es necesario destacar la idea de montarlo en una gorra para no tener que sujetarlo con las manos.
 
@@ -97,7 +97,7 @@ La primera es la aplicación original hecha por Google para su visor.
 * **Photo Sphere**. ¿Qué mejor que un visor de realidad virtual para ver las fotos esféricas que hayas tomado?
 * **Windy Day**. Corto de animación interactivo realizado por Spotlight Stories.
 
-{{< figure src="/posts/visor-de-realidad-virtual-diyvr/images/5.jpg" caption="Captura de pantalla de la aplicación [Cardboard](https://goo.gl/dlDhCg) de Google, justo antes de elegir la demo de Youtube." >}}
+{{< figure src="images/5.jpg" caption="Captura de pantalla de la aplicación [Cardboard](https://goo.gl/dlDhCg) de Google, justo antes de elegir la demo de Youtube." >}}
 
 Mientras que [Tuscany Dive](https://play.google.com/store/apps/details?id=com.FabulousPixel.TuscanyDive) es una fantástica demo con la que se puede explorar una villa en la Toscana italiana.
 Si se dispone de un controlador bluetooth se puede utilizar para caminar.

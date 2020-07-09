@@ -8,7 +8,7 @@ tags:
  - Software Libre
 
 images:
- - "/posts/la-ull-estrena-adobe-connect-qué-fue-del-compromiso-con-el-software-libre/images/1.png" 
+ - "images/1.png" 
 
 aliases:
  - "/la-ull-estrena-adobe-connect-qu%C3%A9-fue-del-compromiso-con-el-software-libre-ee426ff7b522"
@@ -29,7 +29,7 @@ Como suele pasar, todo empieza con un correo recibido el mismo jueves 31 de marz
 > "El próximo lunes 4 de abril de 10 a 12 de la mañana la Unidad de Docencia Virtual celebrará en la sala de reuniones del Vicerrectorado de Docencia una sesión formativa sobre Adobe Connect, un sistema de videoconferencia de especial interés para las titulaciones semipresenciales y online que podrán utilizar con los estudiantes.
 > Sería conveniente la asistencia del profesorado de nuestro máster."
 
-{{< figure src="/posts/la-ull-estrena-adobe-connect-qué-fue-del-compromiso-con-el-software-libre/images/1.png" >}}
+{{< figure src="images/1.png" >}}
 
 ¿Mi primer pensamiento? Que parece que ahora tenemos Adobe Connect cuando hasta hace poco la ULL no tenía licencias de ese producto.
 ¿Era tan urgente hacer esto que ha sido de lo primero que se ha hecho para modernizar el servicio?
