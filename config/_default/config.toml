@@ -31,12 +31,23 @@ enableEmoji = true
       scale = true
       fullscreen = true
 
+    [params.page.share]
+      enable = true
+      Twitter = true
+      Facebook = true
+      Linkedin = true
+      Whatsapp = true
+
   [params.header]
     [params.header.title]
       logo = ""
       name = "Jesús Torres"
       pre = '<i class="fas fa-code"></i>'
       post = ''
+
+  [params.seo]
+    image = "/thumbnail.png"
+    thumbnailUrl = "/thumbnail.png"
 
   [params.footer]
     enable = true
@@ -52,9 +63,9 @@ enableEmoji = true
       # Avantar. Puede usarse Gravatar o cualquier imagen
       gravatarEmail = "jmtorres@ull.edu.es"
       #avatarURL = "/static/images/avatar.png"
-      subtitle = "Docente e investigador de la Universidad de La Laguna"
+      #subtitle = "Docente e investigador de la Universidad de La Laguna"
       # Use typeit animation for subtitle
-      typeit = true
+      typeit = false
       social = true
 
     [params.home.posts]
@@ -70,13 +81,6 @@ enableEmoji = true
     Googlescholar = "-I2HnbIAAAAJ"
     Researchgate = "Jesus_Torres30"
     RSS = true
-
-  [params.page.share]
-    enable = true
-    Twitter = true
-    Facebook = true
-    Linkedin = true
-    Whatsapp = true
 
   [params.search]
     enable = true
