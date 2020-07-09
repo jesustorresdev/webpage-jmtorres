@@ -7,10 +7,8 @@
 {{- if .Get "caption" -}}
   {{- $options = dict "Caption" (.Get "caption") | merge $options -}}
 {{- end -}}
-<div class="cookieconsent-section">
-  {{- if $.Site.Params.cookieconsent | and $.Site.Params.cookieconsent.enable -}}
-    {{- dict "Site" "google.com" "PolicyLink" "https://gsuite.google.com/terms/education_privacy.html" | partial "externalcookie.html" -}}
-    {{- $options = dict "CookieConsentTag" "statistics" | merge $options -}}
-  {{- end -}}
-  {{- partial "iframe.html" $options -}}
-</div>
+{{- if $.Site.Params.cookieconsent | and $.Site.Params.cookieconsent.enable -}}
+  {{- dict "Site" "google.com" | partial "thirdpartycookies.html" -}}
+  {{- $options = dict "CookieConsentTag" "statistics" | merge $options -}}
+{{- end -}}
+{{- partial "iframe.html" $options -}}

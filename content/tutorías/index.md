@@ -37,9 +37,7 @@ En caso de tener algún tipo de problema con estos horarios no dudes en [contact
 **Las tutorías tendrán lugar en la planta baja del edificio Garoé**, ubicado entre la Escuela Superior de Ingeniería y Tecnología y el edificio de la Sección de Física y Matemáticas.
 Dentro del edificio mi despacho está a la izquierda nada más entrar por la puerta principal y llegar hasta las escaleras.
 
-{{< cookieconsent >}}
 A continuación se puede ver la ubicación del Edificio Garoé en el Campus de Anchieta de la Universidad de La Laguna:
 
+{{< thirdpartycookies "mapbox.com" >}}
 {{< mapbox lng="-16.321359" lat="28.482603" zoom="17" >}}
-
-{{< cookieconsent />}}

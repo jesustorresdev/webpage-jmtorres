@@ -9,10 +9,8 @@
 {{- if .Get "caption" -}}
   {{- $options = dict "Caption" (.Get "caption") | merge $options -}}
 {{- end -}}
-<div class="cookieconsent-section">
-  {{- if $.Site.Params.cookieconsent | and $.Site.Params.cookieconsent.enable -}}
-    {{- dict "Site" "facebook.com" "PolicyLink" "https://www.facebook.com/policy.php" | partial "externalcookie.html" -}}
-    {{- $options = dict "CookieConsentTag" "marketing" | merge $options -}}
-  {{- end -}}
-  {{- partial "iframe.html" $options -}}
-</div>
+{{- if $.Site.Params.cookieconsent | and $.Site.Params.cookieconsent.enable -}}
+  {{- dict "Site" "facebook.com" | partial "thirdpartycookies.html" -}}
+  {{- $options = dict "CookieConsentTag" "marketing" | merge $options -}}
+{{- end -}}
+{{- partial "iframe.html" $options -}}

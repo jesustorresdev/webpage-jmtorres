@@ -1,0 +1,3 @@
+{{- if $.Site.Params.cookieconsent | and $.Site.Params.cookieconsent.enable -}}
+{{- dict "Site" (.Get 0) | partial "thirdpartycookies.html" -}}
+{{- end -}}
