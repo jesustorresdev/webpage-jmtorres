@@ -3,8 +3,7 @@ title: "SnapRAID y MergerFS para almacenar archivos de forma fiable (y II)"
 author: "Jesús Torres"
 date: 2019-02-27T11:29:01.097Z
 
-description: "Segunda entrega sobe el uso de SnapRAID y MergerFS para disponer de un almacenamiento fiable con varios discos duros."
-subtitle: "Segunda entrega sobe el uso de SnapRAID y MergerFS para disponer de un almacenamiento fiable con varios discos duros."
+summary: "Continuamos con la configuración de un espacio de almacenamiento fiable, automatizando la ejecución de SnapRAID en momentos concretos del día y configurando MergerFS para combinar varios discos en uno solo."
 
 tags:
  - Linux
@@ -21,7 +20,7 @@ aliases:
 _HDD --- [amendch](https://www.flickr.com/photos/39244466@N02/5427739593/in/photolist-9gCzT8-4UVUNJ-71Mb5R-91d5pX-oMFTx2-oMFQjD-5gDHxc-4oTnmH-bqrKL-6437bG-d3uXp7-9LgqFA-8bJz7i-3imxtM-ERbLe-7nGAFG-5gDHup-4oTnXc-9LgmKu-75fHu-qkKNAp-oWpoqT-pLwxeF-3KCpZN-9LgmbA-emkmar-9wLNNj-yoKes9-9Lgo3b-6j1N5L-xxhYh-ERcmU-9Lgrcw-dmA143-2DJQw-foCdqf-5wWien-9wHQvp-c9yGns-5TQgX3-2zEFt-VXYVdD-5SCmBK-6ViFwn-uHRq7-5TQoVw-s2QEx-uHRAy-VGJxwS-DCBbHY), [BY-NC-ND-2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/)_
 
 _Este artículo corresponde a una serie donde se explica como usar SnapRAID y MergerFS para disponer de un almacenamiento fiable formado por varios discos duros en un ordenador de sobremesa.
-Si te has perdido la parte anterior, la tienes [aquí]({{< ref "posts/snapraid-y-mergerfs-para-almacenar-archivos-de-forma-fiable-i" >}})._
+Si te has perdido la parte anterior, la tienes [aquí]({{< ref "posts/snapraid-y-mergerfs-para-almacenar-archivos-de-forma-fiable-parte-1" >}})._
 
 ____
 
@@ -51,7 +50,7 @@ Sin embargo, yo lo utilizo en un sistema de escritorio, por lo que prefiero que 
 Para eso el script invoca otro script llamado `notify-send-all`, que sirve para enviar un mensaje a todos los usuarios con una sesión de escritorio activa.
 Este script también debe ser descargado y copiado en la ruta `/usr/local/sbin/notify-send-all`.
 
-{{< gist aplatanado e8810dbceece820b4ae5aa0ee5ca200a notify-send-all >}}
+{{< gist aplatanado e8810dbceece820b4ae5aa0ee5ca200a "notify-send-all" >}}
 
 Finalmente puede ser necesario editar `snapraid_diff_n_sync.sh` para ajustar su configuración.
 Esta configuración está disponible bajo la línea:

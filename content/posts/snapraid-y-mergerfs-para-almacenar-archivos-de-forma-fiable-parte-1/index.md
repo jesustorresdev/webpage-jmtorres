@@ -3,8 +3,7 @@ title: "SnapRAID y MergerFS para almacenar archivos de forma fiable (I)"
 author: "Jesús Torres"
 date: 2019-02-18T18:20:11.676Z
 
-description: "SnapRAID es una alternativa para disponer de un almacenamiento fiable. Mientras que MergerFS permite combinar fácilmente varios discos."
-subtitle: "SnapRAID es una alternativa para disponer de un almacenamiento fiable. Mientras que MergerFS permite combinar fácilmente varios discos."
+summary: "SnapRAID es una alternativa a los sistemas RAID convencionales para configurar un almacenamiento fiable. Mientras que MergerFS permite combinar fácilmente varios discos en un único espacio del almacenamiento. Vamos a utilizar ambos para preparar un espacio donde guardar de forma fiable todo tipo de contenidos."
 
 tags:
  - Linux
@@ -19,7 +18,7 @@ aliases:
     - "/snapraid-y-mergerfs-para-almacenar-archivos-de-forma-fiable-i-24f4b0d616c2"
 ---
 
-Hace años que vengo pensando en adquirir una NAS para almacenar copias de seguridad de las cosas más importantes ---las fotos de fiestas y viajes, algunos libros electrónicos, la tesis doctoral que nadie más leerá jamas y otros documentos---.
+Hace años que vengo pensando en adquirir una NAS para almacenar copias de seguridad de las cosas más importantes ---las fotos de fiestas y viajes, algunos libros electrónicos, la tesis doctoral que nadie más leerá jamás y otros documentos---.
 Quizás incluso usarlo como _media server_ para distribuir algunos de esos contenidos en la red de mi casa.
 
 El asunto es que me gustaría preservar la información pero al mismo tiempo que sea accesible.
@@ -292,4 +291,4 @@ Es mucho mejor automatizar la ejecución del SnapRAID, como veremos en el siguie
 
 Si al final te animas a probar [_SnapRAID_](https://www.snapraid.it/) y te resulta útil, no olvides que el proyecto [admite donaciones](https://www.snapraid.it/) para ayudar a mantener su desarrollo.
 
-_(Parte 2, [aquí]({{< ref "posts/snapraid-y-mergerfs-para-almacenar-archivos-de-forma-fiable-y-ii" >}}))_
+_(Parte 2, [aquí]({{< ref "posts/snapraid-y-mergerfs-para-almacenar-archivos-de-forma-fiable-parte-2" >}}))_
