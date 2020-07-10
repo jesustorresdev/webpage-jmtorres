@@ -12,7 +12,7 @@ images:
  - "images/1.jpg" 
 
 aliases:
- - "/mi-sitio-web-en-2014-seg%C3%BAn-jetpack-77ad951b3996"
+ - "/mi-sitio-web-en-2014-según-jetpack-77ad951b3996"
 ---
 
 Me acaba de llegar el [informe Jetpack](http://jetpack.me/annual-report/62830682/2014/) de como ha ido este sitio web en 2014.

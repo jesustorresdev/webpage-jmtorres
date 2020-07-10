@@ -17,7 +17,7 @@ images:
 
 
 aliases:
- - "/aprendiendo-scrum-en-el-d%C3%ADa-del-centro-9e7d1df1fe6e"
+ - "/aprendiendo-scrum-en-el-día-del-centro-9e7d1df1fe6e"
 ---
 _Encabeza este artículo un esquema del marco de trabajo Scrum --- [Lakeworks~commonswiki](https://commons.wikimedia.org/w/index.php?title=User:Lakeworks~commonswiki&action=edit&redlink=1), License [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/)_.
 

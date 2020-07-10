@@ -1,0 +1,16 @@
+# Redirecciones mediante archivo _redirects de Netlify (ver sección "outputs" y "layouts/index.redir").
+disableAliases = true
+
+[mediaTypes]
+  [mediaTypes."text/netlify"]
+    delimiter = ""
+
+[outputFormats]
+  [outputFormats.NETLIFY_REDIR]
+    mediatype = "text/netlify"
+    baseName = "_redirects"
+    isPlainText = true
+    notAlternative = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON", "NETLIFY_REDIR"]
