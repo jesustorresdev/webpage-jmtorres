@@ -25,7 +25,7 @@ Siempre hago pequeños ajustes que, observándolos con perspectiva, poco a poco 
 
 En este ocasión me he animado a tratar el tema del uso de las licencias [Creative Commons](http://es.creativecommons.org/) como herramienta de marketing.
 Lamentablemente este no es un asunto muy tratado en la web.
-Por lo que he tenido que recopilar distintos casos de éxito y las opiniones de diversos autores para elaborar los contenidos de clase, que he resumido en [esta presentación](http://jmtorres.webs.ull.es/slides/creative_commons_como_herramienta_de_marketing/).
+Por lo que he tenido que recopilar distintos casos de éxito y las opiniones de diversos autores para elaborar los contenidos de clase, que he resumido en [esta presentación](pdfs/creative-commons-como-herramienta-de-marketing.pdf).
 
 ## En resume...
 

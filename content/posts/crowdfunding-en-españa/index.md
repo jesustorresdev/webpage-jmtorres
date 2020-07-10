@@ -17,7 +17,7 @@ aliases:
 
 Después de un invierno movidito ---entre gripes y alertas máximas--- la semana pasada pudimos recuperar un día de clase en el Especialista en Redes Sociales y Comunidades Virtuales.
 Para esta edición extraje lo referente a los modelos de negocio del software y la cultura libre del primer tema, incorporándolo en uno nuevo sobre modelos de negocio P2P.
-Así que tuve que elaborar una nueva [presentación](http://jmtorres.webs.ull.es/slides/modelos_de_negocio_p2p/) a partir de la extensa documentación de la [P2P Foundation](http://p2pfoundation.net/Category:Business_Models).
+Así que tuve que elaborar una nueva [presentación](pdfs/modelos-de-negocio-p2p.pdf) a partir de la extensa documentación de la [P2P Foundation](http://p2pfoundation.net/Category:Business_Models).
 
 {{< figure src="images/1.jpg" caption="Crowdfunding Scene --- [Dfbeltranp](https://commons.wikimedia.org/w/index.php?title=User:Dfbeltranp&action=edit&redlink=1), License [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en)" >}}
 
