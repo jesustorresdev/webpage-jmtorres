@@ -125,7 +125,7 @@ enableEmoji = true
     noClasses = false
 
 [outputs]
-  home = ["HTML", "RSS", "JSON", "NETLIFY_REDIR"]
+  home = ["HTML", "RSS", "JSON"]
 
 [sitemap]
   changefreq = "monthly"
