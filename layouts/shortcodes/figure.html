@@ -1,0 +1,31 @@
+{{- $options := dict "Src" (.Get "src") -}}
+
+{{- $alt := .Get "alt" | default (.Get "caption" | markdownify | plainify) -}}
+{{- $options = dict "Alt" $alt | merge $options -}}
+
+{{- $options = dict "Width" (.Get "width") | merge $options -}}
+{{- $options = dict "Height"  (.Get "height") | merge $options -}}
+{{- $options = dict "Resources" .Page.Resources | merge $options -}}
+
+<figure{{ with .Get "class" }} class="{{ . }}"{{ end }}>
+    {{- if .Get "link" -}}
+        <a href="{{ .Get "link" }}"{{ with .Get "target" }} target="{{ . }}"{{ end }}{{ with .Get "rel" }} rel="{{ . }}"{{ end }}>
+    {{- end }}
+    {{- partial "plugin/image.html" $options -}}
+    {{- if .Get "link" }}</a>{{ end -}}
+    {{- if or (or (.Get "title") (.Get "caption")) (.Get "attr") -}}
+        <figcaption>
+            {{ with (.Get "title") -}}
+                <h4>{{ . }}</h4>
+            {{- end -}}
+            {{- if or (.Get "caption") (.Get "attr") -}}<p>
+                {{- .Get "caption" | markdownify -}}
+                {{- with .Get "attrlink" }}
+                    <a href="{{ . }}">
+                {{- end -}}
+                {{- .Get "attr" | markdownify -}}
+                {{- if .Get "attrlink" }}</a>{{ end }}</p>
+            {{- end }}
+        </figcaption>
+    {{- end }}
+</figure>
