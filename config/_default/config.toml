@@ -86,6 +86,11 @@ enableEmoji = true
     type = "lunr"
     snippetLength = 100
 
+[frontmatter]
+  date = ["date", "publishDate", ":filename", "lastmod"]
+  publishDate = ["publishDate", "date", ":filename"]
+  lastmod = [":git", "lastmod", "date","publishDate"]
+
 [taxonomies]
   #category = "categories"
   tag = "tags"
