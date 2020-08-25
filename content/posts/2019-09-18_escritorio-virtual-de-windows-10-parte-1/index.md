@@ -50,9 +50,9 @@ Para que esta configuración funcione es necesario:
 
 Para empezar necesitamos _QEMU/KVM_, _Libvirt_, _OVMF_ y _Virtual Machine Manager_:
 
-{{< highlight bash >}}
-sudo apt-get install qemu-kvm ovmf libvirt-clients libvirt-daemon-system bridge-utils virt-manager
-{{< / highlight >}}
+```
+$ sudo apt-get install qemu-kvm ovmf libvirt-clients libvirt-daemon-system bridge-utils virt-manager
+```
 
 [_Virtual Machine Manager_](https://virt-manager.org/) (o _virt-manager_) será la aplicación que utilizaremos para configurar y lanzar la máquina virtual.
 Básicamente se trata de una aplicación de escritorio para gestionar máquinas virtuales a través de [_libvirt_](https://libvirt.org/), por lo que esta última se instará automáticamente como dependencia del primero.
@@ -60,9 +60,9 @@ Básicamente se trata de una aplicación de escritorio para gestionar máquinas 
 Para que podamos lanzar máquinas virtuales con _virt-manager_ necesitamos que nuestro usuario esté dentro del grupo `libvirt`.
 Podemos añadirlo así:
 
-{{< highlight bash >}}
-sudo adduser $(id -un) libvirt
-{{< / highlight >}}
+```
+$ sudo adduser $(id -un) libvirt
+```
 
 Obviamente tendremos que cerrar la sesión y volver a iniciarla para que el cambio tenga efecto.
 
@@ -78,9 +78,9 @@ Lo primero es activar el soporte de [IOMMU]({{< ref "/posts/2015-10-06_iommu-pri
 Para eso editamos `/etc/default/grub` y añadimos `intel_iommu=on` a la variable `GRUB_CMDLINE_LINUX_DEFAULT`.
 Después ejecutamos:
 
-{{< highlight bash >}}
-sudo update-grub
-{{< / highlight >}}
+```
+$ sudo update-grub
+```
 
 para actualizar la configuración del gestor de arranque con la nueva opción.
 
@@ -91,9 +91,9 @@ Por ejemplo, algunos informes hablan específicamente de problemas al usar el au
 El asunto es que en caso de problemas es buena idea probar a desactivar la IOMMU para la gráfica integrada, utilizando la opción `intel_iommu=on,igfx_off`.
 De hecho mi configuración es:
 
-{{< highlight plaintext >}}
+```
 GRUB_CMDLINE_LINUX_DEFAULT="intel_iommu=on,igfx_off quiet splash"
-{{< / highlight >}}
+```
 
 Además, se sabe que hay una importante pérdida de rendimiento en los procesador Sandy Bridge al activar IOMMU.
 En ese caso se recomienda usar la opción `intel_iommu=pt` en lugar de `intel_iommu=on`.
@@ -101,9 +101,9 @@ En la [documentación de Linux](https://www.kernel.org/doc/Documentation/Intel-I
 
 Una vez actualizada la configuración del gestor de arranque, debemos reiniciar el sistema y comprobar que el soporte de IOMMU está activado examinando los registros del sistema:
 
-{{< highlight bash >}}
-journalctl -b | grep DMAR
-{{< / highlight >}}
+```
+$ journalctl -b | grep DMAR
+```
 
 Vamos por el buen camino si en la salida del comando anterior vemos una línea que dice:
 
@@ -133,9 +133,9 @@ Y para que eso sea posible, el dispositivo no puede estar siendo usado por otro 
 Pongamos por caso que, como queremos hacer _VGA passthrough_, nos interesa registrar nuestra tarjeta gráfica en VFIO.
 Lo primero es obtener la lista de dispositivos, ejecutando el comando:
 
-{{< highlight bash >}}
-lspci -nn
-{{< / highlight >}}
+```
+$ lspci -nn
+```
 
 El resultado será similar al de la siguiente imagen. La línea marcada corresponde con la tarjeta gráfica, instada en mi ordenador, que quiero usar con la máquina virtual:
 
@@ -144,9 +144,9 @@ El resultado será similar al de la siguiente imagen. La línea marcada correspo
 El texto `[10de:1002]` del final de la línea marcada nos indica que el fabricante de esa tarjeta gráfica tiene el identificador `0x10DE` y que el modelo se identifica como `0x1402`.
 Así que para registrar esta tarjeta habría que indicarle al controlador VFIO estos identificadores de la siguiente manera:
 
-{{< highlight bash >}}
-echo 10DE 1402 |sudo tee /sys/bus/pci/drivers/vfio-pci/new_id
-{{< / highlight >}}
+```
+$ echo 10DE 1402 |sudo tee /sys/bus/pci/drivers/vfio-pci/new_id
+```
 
 El problema es que esto hay que hacerlo antes de iniciar la máquina virtual y para cada dispositivo que queremos asignarle.
 En mi caso no sólo es la tarjeta gráfica, también el dispositivo de audio HDMI de la misma tarjeta ---justo en la línea siguiente--- y un concentrador raíz USB ---el ASM1042 SuperSpeed USB Host Controller--- para poder conectar directamente un teclado y ratón USB, en caso de que hiciera falta.
@@ -163,9 +163,9 @@ Dentro del directorio `libvirt-hooks` está el script `qemu`, que es el _hook_ q
 
 Se puede instalar así:
 
-{{< highlight bash >}}
-sudo install -m755 libvirt-hooks/qemu /etc/libvirt/hooks
-{{< / highlight >}}
+```
+$ sudo install -m755 libvirt-hooks/qemu /etc/libvirt/hooks
+```
 
 [_Libvirt_ admite 5 scripts de hook](https://libvirt.org/hooks.html#names).
 El script `qemu` se ejecuta cuando libvirt inicia, detiene o migra una máquina virtual de _QEMU_; que es exactamente nuestro caso. 
@@ -277,22 +277,22 @@ También busca las redes virtuales a las que está conectada la máquina virtual
 El script anterior solo podrá descargar el controlador de la tarjeta gráfica si no es la que estamos usando actualmente para el escritorio de Linux.
 Podemos consultar qué gráfica está usando actualmente nuestro entorno gráfico ejecutando:
 
-{{< highlight bash >}}
+```
 $ prime-select query  
 nvidia
-{{< / highlight >}}
+```
 
 Si estamos usando la tarjeta gráfica, podemos seleccionar la gráfica integrada ejecutando:
 
-{{< highlight bash >}}
-prime-select intel
-{{< / highlight >}}
+```
+$ prime-select intel
+```
 
 Después tendremos que reiniciar el sistema o salir de la sesión de escritorio y reiniciar el gestor de pantalla:
 
-{{< highlight bash >}}
-sudo systemctl restart display-manager
-{{< / highlight >}}
+```
+$ sudo systemctl restart display-manager
+```
 
 ## Crear la máquina virtual
 

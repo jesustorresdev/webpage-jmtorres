@@ -51,9 +51,9 @@ La combinación de estas dos opciones debería ofrecernos mejor rendimiento que 
 
 Dentro de la máquina virtual, en el intérprete de comandos de Windows, es interesante ejecutar este comando:
 
-{{< highlight bash >}}
-fsutil behavior query DisableDeleteNotify
-{{< / highlight >}}
+```
+> fsutil behavior query DisableDeleteNotify
+```
 
 Si devuelve 0, nos indica que cuando un bloque del almacenamiento deja de usarse, Windows envía al dispositivo el comando TRIM para indicarle que ha quedado libre.
 
@@ -62,9 +62,9 @@ Si usamos un volumen lógico LVM sobre un dispositivo SSD, como es mi caso, el c
 
 Si hiciera falta, para activarlo hay que ejecutar:
 
-{{< highlight bash >}}
-fsutil behavior set DisableDeleteNotify 0
-{{< / highlight >}}
+```
+> fsutil behavior set DisableDeleteNotify 0
+```
 
 ## Rendimiento de la interfaz de red
 
@@ -124,9 +124,9 @@ Es decir, que la máquina virtual piensa que la memoria instalada es {{< gui "As
 
 La cantidad indicada en "Asignación actual" se puede cambiar en tiempo de ejecución desde el anfitrión mediante el comando `virsh`:
 
-{{< highlight bash >}}
-sudo virsh setmem <máquina_virtual> 2G --live
-{{< / highlight >}}
+```
+$ sudo virsh setmem <máquina_virtual> 2G --live
+```
 
 Si el nuevo valor es mayor, el balón se encogerá para que el sistema de la máquina virtual pueda consumir más memoria.
 Obviamente nunca podremos asignar un valor superior a {{< gui "Asignación actual" >}}.
@@ -168,9 +168,9 @@ Para mejorar el rendimiento se puede vincular cada uno de esos hilos a una CPU r
 
 Lamentablemente, para configurar esta funcionalidad no podemos usar la interfaz gráfica de usuario de _virt-manager_. Tenemos que ejecutar:
 
-{{< highlight bash >}}
-sudo virsh edit <máquina_virtual>
-{{< / highlight >}}
+```
+$ sudo virsh edit <máquina_virtual>
+```
 
 desde la línea de comandos y modificar el XML ---que describe la máquina virtual --- a mano para añadir antes de la etiqueta `<os>` lo siguiente:
 
@@ -200,9 +200,9 @@ El tamaño de página típico son 4KB pero algunas CPU permiten tamaños superio
 
 Para activar su uso, primero hay que editar el XML de la máquina virtual:
 
-{{< highlight bash >}}
+```
 sudo virsh edit <máquina_virtual>
-{{< / highlight >}}
+```
 
 y añadir lo siguiente antes de la etiqueta `<os>`:
 
@@ -215,9 +215,9 @@ y añadir lo siguiente antes de la etiqueta `<os>`:
 Las _huge pages_ pueden no estar disponibles cuando se necesitan debido a la fragmentación de la memoria. 
 Por eso, si se quieren usar, hay que configurar el sistema para reservar la cantidad necesaria durante el arranque:
 
-{{< highlight bash >}}
-echo "vm.nr_hugepages=2048" | sudo tee /etc/sysctl.d/hugepages.conf
-{{< / highlight >}}
+```
+$ echo "vm.nr_hugepages=2048" | sudo tee /etc/sysctl.d/hugepages.conf
+```
 
 Donde 2048 páginas de 2MB son 4096MB, suficiente para una máquina virtual de 4GB.
 Sin embargo hay que tener presente que la memoria reservada no puede ser usada con otro propósito ni puede ser intercambiada.
@@ -248,9 +248,9 @@ Es preferible seleccionar el controlador adecuado nosotros mismos antes que util
 Sin embargo [con Windows 10 algunos usuarios informan de que pueden ser necesarios algunos trucos adicionales](https://ubuntuforums.org/showthread.php?t=2289210).
 En mi caso intenté una actualización de Windows 8.1 a Windows 10 que no se completaba sino editaba el XML de la máquina virtual
 
-{{< highlight bash >}}
-sudo virsh edit <máquina_virtual>
-{{< / highlight >}}
+```
+$ sudo virsh edit <máquina_virtual>
+```
 
 para eliminar toda la etiqueta `<hyperv>` en `<features>` y añadir lo siguiente:
 
@@ -310,7 +310,7 @@ En `conf/synergy.conf` dentro de mi [repositorio}(https://github.com/aplatanado/
 _Synergy_ hace que al llegar al borde derecho de mi monitor en el sistema anfitrión, este aparezca por la izquierda en el monitor de la máquina virtual.
 
 Este comportamiento a veces da problemas con juegos o con herramientas de edición 3D. 
-Para esos casos he configurado la combinación de teclas Alt+W para que al pulsarla se confine el ratón al escritorio del sistema en el que esté en ese momento.
+Para esos casos he configurado la combinación de teclas {{< kbd "Alt+W" >}} para que al pulsarla se confine el ratón al escritorio del sistema en el que esté en ese momento.
 Así el ratón y la entrada de teclado no puede cambiar de un sistema a otro por error.
 
 _Synergy_ usa la red para conectar servidor y cliente, pero al usar _macvtap_, anfitrión y máquina virtual no pueden.
@@ -348,9 +348,9 @@ En mi caso, tras varias pruebas, he dejado el modelo ICH9, que es bastante moder
 Luego hay que indicar a _QEMU_ como reproducir en el anfitrión el sonido del dispositivo emulado.
 Simplemente editamos el XML de la máquina virtual:
 
-{{< highlight bash >}}
-sudo virsh edit <máquina_virtual>
-{{< / highlight >}}
+```
+$ sudo virsh edit <máquina_virtual>
+```
 
 y añadimos lo siguiente al final:
 
@@ -371,16 +371,16 @@ Pero el retardo es excesivo, haciendo imposible ver un vídeo. Con 1024 el retar
 Por defecto _pulseaudio_ no acepta conexiones de red por TCP.
 Para resolverlo hay que editar `/etc/pulse/default.pa` y descomentar la línea del módulo `module-native-protocol-tcp` y que quede así:
 
-{{< highlight conf >}}
+```
 load-module module-native-protocol-tcp auth-ip-acl=127.0.0.1
-{{< / highlight >}}
+```
 
 Por defecto, si tenemos activado el monitor virtual VNC, _libvirt_ ignorará lo indicado en `QEMU_AUDIO_DRV` para redirigir todo el sonido por VNC, tanto si el cliente VNC sabe reproducir el audio como si no es así.
 Es necesario editar `/etc/libvirt/qemu.conf` y asegurarnos que la siguiente línea está descomentada y aparece así:
 
-{{< highlight conf >}}
+```
 vnc_allow_host_audio = 1
-{{< / highlight >}}
+```
 
 para que _libvirt_ haga siempre lo indicado por `QEMU_AUDIO_DRV`.
 

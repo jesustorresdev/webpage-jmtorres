@@ -36,15 +36,15 @@ Mientras que el mio lo está en [GitHub Gist](https://gist.github.com/aplatanado
 Para instalarlo simplemente hay que descargarlo y copiarlo en `/usr/local/sbin/snapraid_diff_n_sync.sh`.
 Después solo es necesario crear el archivo `/etc/cron.d/snapraid` con el siguiente contenido:
 
-{{< highlight bash >}}
+```
 # /etc/cron.d/snapraid: crontab entries for snapraid package
 # Run a SnapRAID diff and then sync  
 30 23   * * *   root  /usr/local/sbin/snapraid_diff_n_sync.sh`
-{{< / highlight >}}
+```
 
 De esta forma el script será ejecutado automáticamente como `root` todos los días a las 23:30.
 
-La diferencia entre el script original y el mio, es que el primero utiliza el correo electrónico para notificar cualquier problema detectado durante la ejecución.
+La diferencia entre el script original y el mío, es que el primero utiliza el correo electrónico para notificar cualquier problema detectado durante la ejecución.
 Sin embargo, yo lo utilizo en un sistema de escritorio, por lo que prefiero que los mensajes se muestren en el área de notificaciones de la barra de tareas.
 
 Para eso el script invoca otro script llamado `notify-send-all`, que sirve para enviar un mensaje a todos los usuarios con una sesión de escritorio activa.
@@ -78,20 +78,20 @@ Los paquetes de _MergerFS_ para distintas distribuciones se pueden descargar des
 Después solo hay que instalar _FUSE_ y el paquete descargado.
 Por ejemplo:
 
-{{< highlight bash >}}
-sudo apt-get install fuse  
-sudo dpkg -i mergerfs_2.25.1.ubuntu-xenial_amd64.deb
-{{< / highlight >}}
+```
+$ sudo apt-get install fuse  
+$ sudo dpkg -i mergerfs_2.25.1.ubuntu-xenial_amd64.deb
+```
 
 Luego se crea el punto de montaje:
 
-{{< highlight bash >}}
-sudo mkdir -p /media/storage/pool
-{{< / highlight >}}
+```
+$ sudo mkdir -p /media/storage/pool
+```
 
-Y se edita `/etc/fstab` para asegurar que se montan automáticamente durante el arranque del sistema:
+Y se edita `/etc/fstab` para añadir la siguiente línea asegurar que se montan automáticamente durante el arranque del sistema:
 
-{{< highlight bash >}}
+{{< highlight cfg >}}
 # BIBLIOTECA: MergerFS  
 /media/storage/data* /media/storage/pool fuse.mergerfs defaults,allow_other,moveonenospc=true,minfreespace=20G,fsname=storage 0 0
 {{< / highlight >}}

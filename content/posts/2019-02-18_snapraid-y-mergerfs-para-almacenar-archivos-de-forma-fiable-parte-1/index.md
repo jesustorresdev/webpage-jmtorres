@@ -116,17 +116,17 @@ Por lo tanto, no buena idea utilizar un disco de paridad pequeño.
 
 Para empezar desde cero creé una tabla de particiones GPT en cada disco, con una única partición EXT4 que ocupa todo el espacio, tanto para los discos de datos:
 
-{{< highlight bash >}}
-sudo mkfs.ext4 -m2 -Eresize=3T -LSTOR-DATA1 /dev/sdc1  
-sudo mkfs.ext4 -m2 -Eresize=3T -LSTOR-DATA2 /dev/sdd1  
-sudo mkfs.ext4 -m2 -Eresize=3T -LSTOR-DATA3 /dev/sde1
-{{< / highlight >}}
+```
+$ sudo mkfs.ext4 -m2 -Eresize=3T -LSTOR-DATA1 /dev/sdc1  
+$ sudo mkfs.ext4 -m2 -Eresize=3T -LSTOR-DATA2 /dev/sdd1  
+$ sudo mkfs.ext4 -m2 -Eresize=3T -LSTOR-DATA3 /dev/sde1
+```
 
 como para el de paridad:
 
-{{< highlight bash >}}
-sudo mkfs.ext4 -m0 -Eresize=3T -Tlargefile4 -LSTOR-PAR1 /dev/sdb1
-{{< / highlight >}}
+```
+$ sudo mkfs.ext4 -m0 -Eresize=3T -Tlargefile4 -LSTOR-PAR1 /dev/sdb1
+```
 
 Respecto a las opciones de `mkfs.ext4` utilizadas:
 
@@ -151,14 +151,14 @@ Así que se puede ganar algo de espacio libre indicando que el sistema de archiv
 
 Una vez formateados, ya solo queda crear los puntos de montaje para los discos:
 
-{{< highlight bash >}}
-sudo mkdir -p /media/storage/{data1,data2,data3,parity1}
-{{< / highlight >}}
+```
+$ sudo mkdir -p /media/storage/{data1,data2,data3,parity1}
+```
 
 y editar `/etc/fstab` para asegurarnos que se montan automáticamente durante el arranque del sistema.
 Con añadir las siguientes líneas es suficiente:
 
-{{< highlight bash >}}
+{{< highlight cfg >}}
 # BIBLIOTECA: disco de paridad de SnapRAID  
 LABEL=STOR-PAR1 /media/storage/parity1  ext4 defaults 0 2  
 # BIBLIOTECA: discos de datos  
@@ -169,34 +169,34 @@ LABEL=STOR-DATA3 /media/storage/data3   ext4 defaults 0 2
 
 En lugar de reiniciar podemos ejecutar `mount -a` para comprobar que el montaje de los discos funciona correctamente.
 
-{{< highlight bash >}}
-sudo mount -a
-{{< / highlight >}}
+```
+$ sudo mount -a
+```
 
 ### Instalación y configuración de SnapRAID
 
 Para instalar SnapRAID en Ubuntu lo más sencillo es añadir el [PPA de Maxim Tikhonov](https://launchpad.net/~tikhonov/+archive/ubuntu/snapraid):
 
-{{< highlight bash >}}
-sudo add-apt-repository ppa:tikhonov/snapraid  
-sudo apt-get update
-{{< / highlight >}}
+```
+$ sudo add-apt-repository ppa:tikhonov/snapraid  
+$ sudo apt-get update
+```
 
 y así poder instalarlo a través del gestor de paquetes de la distribución:
 
-{{< highlight bash >}}
-sudo apt-get install snapraid
-{{< / highlight >}}
+```
+$ sudo apt-get install snapraid
+```
 
 para luego editar el archivo de configuración `/etc/snapraid.conf`:
 
-{{< highlight bash >}}
-sudo nano /etc/snapraid.conf
-{{< / highlight >}}
+```
+$ sudo nano /etc/snapraid.conf
+```
 
 En dicho archivo, primero se indica la ruta al archivo de paridad en el directorio donde está montando el disco de paridad:
 
-{{< highlight bash >}}
+{{< highlight cfg >}}
 # Defines the file to use as parity storage  
 # It must NOT be in a data disk  
 # Format: "parity FILE_PATH"  
@@ -210,7 +210,7 @@ Al menos debe haber un archivo de contenido por archivo de paridad más uno adic
 Y cada archivo debe estar en un disco duro diferente.
 En mi caso guardo el archivo de contenidos en el sistema de archivos raíz en `/var/lib/snapraid/snapraid.content` y dos copias adicionales ---aunque solo estoy obligado a tener una más--- en los discos de datos `STORAGE-DATA2` y `STORAGE-DATA3`.
 
-{{< highlight bash >}}
+{{< highlight cfg >}}
 # Defines the files to use as content list  
 # You can use multiple specification to store more copies  
 # You must have least one copy for each parity file plus one.
@@ -228,7 +228,7 @@ Ojo porque, si se configura igual, el directorio `/var/lib/snapraid/` debe exist
 
 Luego se indican las rutas a los puntos de montaje de los discos de datos:
 
-{{< highlight bash >}}
+{{< highlight cfg >}}
 # Defines the data disks to use  
 # The name and mount point association is relevant for parity, do  
 # not change it  
@@ -243,7 +243,7 @@ data d3 /media/storage/data3
 
 Y finamente las rutas dentro de los puntos de montaje de los discos de datos de archivos que serán excluidos de la sincronización:
 
-{{< highlight bash >}}
+{{< highlight cfg >}}
 # Defines files and directories to exclude  
 # Remember that all the paths are relative at the mount points  
 # Format: "exclude FILE"  
@@ -265,9 +265,9 @@ Si finalmente decido preservar alguno de esos archivos, ya lo moveré a otra car
 
 Una vez hecho todo esto podemos sincronizar el array de discos, protegiendo su contenido:
 
-{{< highlight bash >}}
-sudo snapraid sync
-{{< / highlight >}}
+```
+$ sudo snapraid sync
+```
 
 ### Usar SnapRAID
 
