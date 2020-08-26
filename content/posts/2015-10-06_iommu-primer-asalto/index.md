@@ -3,8 +3,6 @@ title: "IOMMU: Primer asalto"
 author: "Jesús Torres"
 #date: 2015-10-06T08:00:49.000Z
 
-license: "CC-BY-4.0"
-
 tags:
  - Linux
  - Virtualización

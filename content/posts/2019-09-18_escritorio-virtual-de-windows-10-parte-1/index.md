@@ -3,8 +3,6 @@ title: "Escritorio virtual de Windows 10 (I)"
 author: "Jesús Torres"
 #date: 2019-09-18T21:36:51.827Z
 
-license: "CC-BY-4.0"
-
 tags:
  - Linux
  - Virtualización

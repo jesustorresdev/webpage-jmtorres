@@ -3,8 +3,6 @@ title: "IOMMU: La maldición de la VGA"
 author: "Jesús Torres"
 #date: 2019-01-28T07:01:01.105Z
 
-license: "CC-BY-4.0"
-
 tags:
  - Linux
  - Virtualización
