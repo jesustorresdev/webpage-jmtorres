@@ -32,7 +32,7 @@ aliases:
 
 _Este artículo pertenece a una serie donde se explica como instalar Windows 10 en una máquina virtual asignándole una de las GPU del equipo de forma exclusiva, para obtener un rendimiento gráfico similar al que tendría en una máquina real._
 _En esta parte veremos como crear la máquina virtual e instalar Windows 10._
-_Si te has perdido algún artículo anterior de esta historia, el primero lo tienes [aquí]({{< ref "/posts/2015-10-06_iommu-primer-asalto" >}}) y el segundo [aquí]({{< ref "/posts/2019-01-28_iommu-la-maldición-de-la-vga" >}})_.
+_Si te has perdido algún artículo anterior de esta historia, el primero lo tienes [aquí]({{< ref "/posts/2015-10-06_iommu-primer-asalto" >}}) y el segundo [aquí]({{< ref "/posts/2019-01-28_iommu-la-maldicion-de-la-vga" >}})_.
 
 ___
 

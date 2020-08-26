@@ -18,7 +18,8 @@ images:
  - "images/1.jpeg" 
 
 aliases:
-    - "/post-mortem-del-máster-de-videojuegos-de-la-ull-parte-1-c0c48b2305f8"
+ - "/post-mortem-del-máster-de-videojuegos-de-la-ull-parte-1-c0c48b2305f8"
+ - "/posts/post-mortem-del-máster-de-videojuegos-de-la-ull-parte-1"
 ---
 
 Un _post mortem_ de un proyecto es el proceso que se realiza para analizar los motivos de su éxito o fracaso.
@@ -178,4 +179,4 @@ De hecho me reafirmé en ese compromiso en una reunión con el Rector el 1 de ma
 
 Cómo es que el 20 de abril lo que se aprobaba en Consejo de Gobierno era un título propio presentado por un profesora, que parece que vino por fortuna a salvarnos de nuestro error, es lo que explicaré en la segunda parte.
 
-_(Parte 2, [_aquí_]({{< ref "/posts/2017-06-02_post-mortem-del-máster-de-videojuegos-de-la-ull-parte-2" >}}))_
+_(Parte 2, [_aquí_]({{< ref "/posts/2017-06-02_post-mortem-del-master-de-videojuegos-de-la-ull-parte-2" >}}))_

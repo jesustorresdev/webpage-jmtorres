@@ -14,7 +14,7 @@ images:
  - "images/1.jpeg" 
 
 aliases:
-    - "/snapraid-y-mergerfs-para-almacenar-archivos-de-forma-fiable-y-ii-11afbb19d23f"
+ - "/snapraid-y-mergerfs-para-almacenar-archivos-de-forma-fiable-y-ii-11afbb19d23f"
 ---
 
 _HDD --- [amendch](https://www.flickr.com/photos/39244466@N02/5427739593/in/photolist-9gCzT8-4UVUNJ-71Mb5R-91d5pX-oMFTx2-oMFQjD-5gDHxc-4oTnmH-bqrKL-6437bG-d3uXp7-9LgqFA-8bJz7i-3imxtM-ERbLe-7nGAFG-5gDHup-4oTnXc-9LgmKu-75fHu-qkKNAp-oWpoqT-pLwxeF-3KCpZN-9LgmbA-emkmar-9wLNNj-yoKes9-9Lgo3b-6j1N5L-xxhYh-ERcmU-9Lgrcw-dmA143-2DJQw-foCdqf-5wWien-9wHQvp-c9yGns-5TQgX3-2zEFt-VXYVdD-5SCmBK-6ViFwn-uHRq7-5TQoVw-s2QEx-uHRAy-VGJxwS-DCBbHY), [BY-NC-ND-2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/)_

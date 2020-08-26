@@ -15,7 +15,7 @@ images:
  - "images/2.jpeg" 
 
 aliases:
-    - "/snapraid-y-mergerfs-para-almacenar-archivos-de-forma-fiable-i-24f4b0d616c2"
+ - "/snapraid-y-mergerfs-para-almacenar-archivos-de-forma-fiable-i-24f4b0d616c2"
 ---
 
 Hace años que vengo pensando en adquirir una NAS para almacenar copias de seguridad de las cosas más importantes ---las fotos de fiestas y viajes, algunos libros electrónicos, la tesis doctoral que nadie más leerá jamás y otros documentos---.

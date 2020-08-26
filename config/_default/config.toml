@@ -89,7 +89,7 @@ enableEmoji = true
 [frontmatter]
   date = ["date", "publishDate", ":filename", "lastmod"]
   publishDate = ["publishDate", "date", ":filename"]
-  lastmod = [":git", "lastmod", "date","publishDate"]
+  lastmod = ["lastmod", ":git", "date", "publishDate", ":filename"]
 
 [taxonomies]
   #category = "categories"

@@ -15,6 +15,7 @@ images:
 
 aliases:
  - "/deep-learning-en-el-ii-congreso-de-estudiantes-de-ingeniería-informática-6c4734342051"
+ - "/posts/deep-learning-en-el-ii-congreso-de-estudiantes-de-ingeniería-informática"
 ---
 
 Esta tarde llegó a su fin el [II Congreso de Estudiantes de Ingeniería Informática de la Universidad de la Laguna](http://cesinf.webs.ull.es/) con el acto de clausura y la entrega de premios.

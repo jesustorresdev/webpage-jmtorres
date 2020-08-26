@@ -13,6 +13,7 @@ images:
 
 aliases:
  - "/crowdfunding-en-españa-c615f2e1abf0"
+ - "/posts/crowdfunding-en-españa"
 ---
 
 Después de un invierno movidito ---entre gripes y alertas máximas--- la semana pasada pudimos recuperar un día de clase en el Especialista en Redes Sociales y Comunidades Virtuales.

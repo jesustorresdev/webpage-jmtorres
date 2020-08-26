@@ -20,6 +20,7 @@ images:
 
 aliases:
  - "/iommu-la-maldición-de-la-vga-cb016e0385a7"
+ - "/posts/iommu-la-maldición-de-la-vga"
 ---
 
 _Voy a explicar el problema con las gráficas integradas Intel (IGD) y las gráficas discretas antiguas que no soportan UEFI cuando se intenta crear un escritorio virtual_

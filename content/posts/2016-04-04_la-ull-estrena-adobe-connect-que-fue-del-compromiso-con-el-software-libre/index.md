@@ -12,6 +12,7 @@ images:
 
 aliases:
  - "/la-ull-estrena-adobe-connect-qué-fue-del-compromiso-con-el-software-libre-ee426ff7b522"
+ - "/posts/ull-estrena-adobe-connect-qué-fue-del-compromiso-con-el-software-libre"
 ---
 
 _**Actualización de 5 de abril de 2016**: Finalmente los responsables de la UDV se animaron a informar a los asistentes a la sesión formativa de todas las herramientas de videoconferencia disponibles oficialmente en la ULL._

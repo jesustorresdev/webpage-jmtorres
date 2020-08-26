@@ -14,6 +14,7 @@ images:
 
 aliases:
  - "/por-qué-voy-en-el-equipo-de-juan-capafons-1d4ca912907c"
+ - "/posts/por-qué-voy-en-el-equipo-de-juan-capafons"
 ---
 
 A estas alturas ya no tengo que imaginar la sorpresa de muchos de mis amigos y compañeros cuando en la presentación de las candidaturas a Rector de la [Universidad de La Laguna](http://www.ull.es/) el pasado miércoles, descubrieron que formo parte de la propuesta de equipo de gobierno de [Juan Capafons](http://web.archive.org/web/20150415003659/http://www.capafons2015.es:80/).

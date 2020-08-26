@@ -16,6 +16,7 @@ images:
 
 aliases:
  - "/post-mortem-del-máster-de-videojuegos-de-la-ull-parte-3-9b4837754c06"
+ - "/posts/post-mortem-del-máster-de-videojuegos-de-la-ull-parte-3"
 ---
 
 _Lo prometido es deuda._
@@ -23,7 +24,7 @@ _Esta vez he tardado un poco más de lo habitual porque se ha desencadenado una 
 _Esta semana **el Consejo Social de la ULL ha parado el título propio y después la universidad ha dado vía libre al título oficial** que proponía mi departamento._
 _Así que, por fortuna, nos toca seguir trabajando._
 
-_Si te has perdido alguna parte anterior de esta historia, la primera la tienes [aquí]({{< ref "/posts/2017-06-01_post-mortem-del-máster-de-videojuegos-de-la-ull-parte-1" >}}) y la segunda [aquí]({{< ref "/posts/2017-06-02_post-mortem-del-máster-de-videojuegos-de-la-ull-parte-2" >}})_.
+_Si te has perdido alguna parte anterior de esta historia, la primera la tienes [aquí]({{< ref "/posts/2017-06-01_post-mortem-del-master-de-videojuegos-de-la-ull-parte-1" >}}) y la segunda [aquí]({{< ref "/posts/2017-06-02_post-mortem-del-master-de-videojuegos-de-la-ull-parte-2" >}})_.
 
 ____
 
@@ -155,7 +156,7 @@ Así que ¿cuál es la diferencia de estos cursos respecto a los de cualquier ac
 Obviamente la universidad debe vigilar lo que se hace con su marca y por eso yo tendría que explicar y proponer mi idea en una memoria.
 Se estudiaría en una comisión y se aprobaría en los distintos órganos de gobierno.
 Al terminar el curso, tendría que hacer una memoria académica para explicar lo contentos que se han quedado los alumnos con la experiencia y una memoria económica con la liquidación correspondiente del presupuesto, para que quede claro a donde fueron destinados todos los gastos.
-Pero en general estos controles son más administrativos que de otro tipo y, por lo que hemos visto en la [primera parte]({{< ref "/posts/2017-06-01_post-mortem-del-máster-de-videojuegos-de-la-ull-parte-1" >}}), parece que actualmente no son especialmente rigurosos.
+Pero en general estos controles son más administrativos que de otro tipo y, por lo que hemos visto en la [primera parte]({{< ref "/posts/2017-06-01_post-mortem-del-master-de-videojuegos-de-la-ull-parte-1" >}}), parece que actualmente no son especialmente rigurosos.
 
 Un título propio no otorga ningún nivel académico.
 Son cursos, como los que puede ofrecer cualquier academia o los que están disponibles en Internet.

@@ -21,6 +21,7 @@ images:
 
 aliases:
  - "/videojuegos-y-visita-a-monterrey-méxico-2017-i-22a96d82bc57"
+ - "/posts/videojuegos-y-visita-a-monterrey-méxico-2017-parte-1"
 ---
 
 Estamos en febrero y hasta el momento no había tenido tiempo de hablar de la estancia que hicimos a finales del año pasado en algunas universidades mexicanas.
@@ -118,4 +119,4 @@ Además, nos dimos un salto por Ciudad de México para ir a la [Universidad Aut�
 Pero esto me está quedado más largo de lo que pensaba.
 Así que por el momento pararé aquí y así me obligo a escribir una segunda parte.
 
-_(Parte 2, [aquí]({{< ref "/posts/2018-04-17_visita-a-monterrey-méxico-2017-parte-2" >}}))_
+_(Parte 2, [aquí]({{< ref "/posts/2018-04-17_visita-a-monterrey-mexico-2017-parte-2" >}}))_

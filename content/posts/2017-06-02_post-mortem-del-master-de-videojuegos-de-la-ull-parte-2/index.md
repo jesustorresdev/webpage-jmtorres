@@ -18,9 +18,10 @@ images:
 
 aliases:
  - "/post-mortem-del-máster-de-videojuegos-de-la-ull-parte-2-eac811fe9245"
+ - "/posts/post-mortem-del-máster-de-videojuegos-de-la-ull-parte-2"
 ---
 
-_¿Te has perdido alguna parte anterior? La primera la tienes [aquí]({{< ref "/posts/2017-06-01_post-mortem-del-máster-de-videojuegos-de-la-ull-parte-1" >}})._
+_¿Te has perdido alguna parte anterior? La primera la tienes [aquí]({{< ref "/posts/2017-06-01_post-mortem-del-master-de-videojuegos-de-la-ull-parte-1" >}})._
 
 ____
 
@@ -61,7 +62,7 @@ El Director del Departamento no comenta nada al respecto.
 
 El título propio, que se suponía abandonado, es aprobado en Consejo de Gobierno de **20 de abril**.
 Obviamente defendido en base a todas las supuestas ventajas que dicen que tienen los títulos propios.
-Las mismas que me encargué de desmontar en la [primer parte]({{< ref "/posts/2017-06-01_post-mortem-del-máster-de-videojuegos-de-la-ull-parte-1" >}}).
+Las mismas que me encargué de desmontar en la [primer parte]({{< ref "/posts/2017-06-01_post-mortem-del-master-de-videojuegos-de-la-ull-parte-1" >}}).
 Esto ocurre sin tener toda la documentación en regla, pese a los problemas de gestión sufridos en la edición anterior y convirtiendo así todo el supuesto proceso de negociación con el departamento en una mera cortina de humo con el único fin de que una persona del equipo de gobierno consiguiera lo que quería.
 
 Obviamente nunca fuimos informados de que esto iba a pasar.
@@ -77,7 +78,7 @@ Como he dicho, a mi sí me gusta respetar mis compromisos y estoy orgulloso de e
 
 ## Feudalismo universitario
 
-Así que el feudalismo universitario al que aludía en la [primera parte]({{< ref "/posts/2018-02-21_videojuegos-y-visita-a-monterrey-méxico-2017-parte-1" >}}) es una realidad.
+Así que el feudalismo universitario al que aludía en la [primera parte]({{< ref "/posts/2018-02-21_videojuegos-y-visita-a-monterrey-mexico-2017-parte-1" >}}) es una realidad.
 Es cierto que en teoría tenemos una estructura profundamente democrática.
 Elegimos a nuestro Rector, a los representantes del claustro, al director de nuestro departamento y a los decanos de nuestras escuelas.
 También elegimos a nuestros representantes en Consejo de Departamento o en la Junta de Escuela.
@@ -130,4 +131,4 @@ Todos los compañeros, absolutamente todos, fueron animados a aportar y a partic
 La única restricción era hacer algo que pudiera ser interesante para nuestros alumnos y, por tanto, bueno para la ULL.
 Obviamente al final se incorporaron los que así lo quisieron.
 
-_(Parte 3, [aquí]({{< ref "/posts/2017-06-08_post-mortem-del-máster-de-videojuegos-de-la-ull-parte-3" >}}))_
+_(Parte 3, [aquí]({{< ref "/posts/2017-06-08_post-mortem-del-master-de-videojuegos-de-la-ull-parte-3" >}}))_

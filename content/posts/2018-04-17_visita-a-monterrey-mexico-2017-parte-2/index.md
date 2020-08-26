@@ -24,12 +24,13 @@ images:
 
 aliases:
  - "/visita-a-monterrey-méxico-2017-y-ii-20f733e3a9a4"
+ - "/posts/visita-a-monterrey-méxico-2017-parte-2"
 ---
 
 _Voy a continuar comentando la estancia que hicimos a finales del año pasado en algunas universidades mexicanas para colaborar y coger ideas ---e inflarnos a estupenda comida mexicana---._
 _¿Te has perdido la parte anterior?._
 _No te preocupes._
-_Si te interesa, la tienes [aquí]({{< ref "/posts/2018-02-21_videojuegos-y-visita-a-monterrey-méxico-2017-parte-1" >}})._
+_Si te interesa, la tienes [aquí]({{< ref "/posts/2018-02-21_videojuegos-y-visita-a-monterrey-mexico-2017-parte-1" >}})._
 
 ## Segunda parada: La UDEM
 

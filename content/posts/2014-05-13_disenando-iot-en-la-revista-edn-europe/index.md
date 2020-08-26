@@ -11,6 +11,7 @@ images:
 
 aliases:
  - "/diseñando-iot-en-la-revista-edn-europe-8e14ef6934"
+ - "/posts/diseñando-iot-en-la-revista-edn-europe"
 ---
 
 {{< figure src="images/1.png" >}}
