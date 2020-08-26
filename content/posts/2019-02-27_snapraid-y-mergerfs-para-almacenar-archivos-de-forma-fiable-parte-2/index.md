@@ -91,7 +91,7 @@ $ sudo mkdir -p /media/storage/pool
 
 Y se edita `/etc/fstab` para añadir la siguiente línea asegurar que se montan automáticamente durante el arranque del sistema:
 
-{{< highlight cfg >}}
+{{< highlight SquidConf >}}
 # BIBLIOTECA: MergerFS  
 /media/storage/data* /media/storage/pool fuse.mergerfs defaults,allow_other,moveonenospc=true,minfreespace=20G,fsname=storage 0 0
 {{< / highlight >}}

@@ -158,7 +158,7 @@ $ sudo mkdir -p /media/storage/{data1,data2,data3,parity1}
 y editar `/etc/fstab` para asegurarnos que se montan automáticamente durante el arranque del sistema.
 Con añadir las siguientes líneas es suficiente:
 
-{{< highlight cfg >}}
+{{< highlight SquidConf >}}
 # BIBLIOTECA: disco de paridad de SnapRAID  
 LABEL=STOR-PAR1 /media/storage/parity1  ext4 defaults 0 2  
 # BIBLIOTECA: discos de datos  
@@ -196,7 +196,7 @@ $ sudo nano /etc/snapraid.conf
 
 En dicho archivo, primero se indica la ruta al archivo de paridad en el directorio donde está montando el disco de paridad:
 
-{{< highlight cfg >}}
+{{< highlight SquidConf >}}
 # Defines the file to use as parity storage  
 # It must NOT be in a data disk  
 # Format: "parity FILE_PATH"  
@@ -210,7 +210,7 @@ Al menos debe haber un archivo de contenido por archivo de paridad más uno adic
 Y cada archivo debe estar en un disco duro diferente.
 En mi caso guardo el archivo de contenidos en el sistema de archivos raíz en `/var/lib/snapraid/snapraid.content` y dos copias adicionales ---aunque solo estoy obligado a tener una más--- en los discos de datos `STORAGE-DATA2` y `STORAGE-DATA3`.
 
-{{< highlight cfg >}}
+{{< highlight SquidConf >}}
 # Defines the files to use as content list  
 # You can use multiple specification to store more copies  
 # You must have least one copy for each parity file plus one.
@@ -228,7 +228,7 @@ Ojo porque, si se configura igual, el directorio `/var/lib/snapraid/` debe exist
 
 Luego se indican las rutas a los puntos de montaje de los discos de datos:
 
-{{< highlight cfg >}}
+{{< highlight SquidConf >}}
 # Defines the data disks to use  
 # The name and mount point association is relevant for parity, do  
 # not change it  
@@ -243,7 +243,7 @@ data d3 /media/storage/data3
 
 Y finamente las rutas dentro de los puntos de montaje de los discos de datos de archivos que serán excluidos de la sincronización:
 
-{{< highlight cfg >}}
+{{< highlight SquidConf >}}
 # Defines files and directories to exclude  
 # Remember that all the paths are relative at the mount points  
 # Format: "exclude FILE"  

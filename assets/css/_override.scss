@@ -15,3 +15,15 @@ $single-link-color-dark: #66ccff;
 
 $single-link-hover-color: #b8336a;
 $single-link-hover-color-dark: #ff8fbe;
+
+@import "_mapextend.scss";
+
+$override: (
+    'code-type-map': (
+        'language-ini': 'Config',
+        'language-squidconf': 'Config',
+        'language-plaintext': ''
+    )
+);
+
+$code-type-map: map-extend($code-type-map, map-get($override, 'code-type-map'), true);
