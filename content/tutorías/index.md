@@ -22,7 +22,7 @@ Durante el actual curso académico 2020/2021 el horario de tutorías previsto se
 
 Sin embargo, para evitar aglomeraciones y como el horario puede sufrir cambios por distintos motivos, **se recomienda consultar el siguiente calendario con los horarios actualizados y coger cita en el hueco deseado** para confirmar la      asistencia:
 
-{{< figure src="images/1.png" caption="Horarios de tutorías actualizados." link="https://calendar.google.com/calendar/selfsched?sstoken=UUNwTTF0UmdJWWd2fGRlZmF1bHR8OWFkMDEwNTlhNTA3MjQ4N2Y4MTNmZjQyMjQ4ZmY4ZDg" >}}
+{{< figure src="images/1.png" caption="Horarios de tutorías actualizados." link="https://calendar.google.com/calendar/u/0/selfsched?sstoken=UVB1bnBDWEt5VWlCfGRlZmF1bHR8ZTEwZTA4MzdmOTcwOTdjOGEzMmU3YjhlZDRmYWI2Mzk" >}}
 
 En caso de tener algún tipo de problema con estos horarios no dudes en ponerte en [contacto conmigo](https://www.ull.es/apps/guias/guias/view_teacher_niu/588/%28%3FPjmtorres.*%29/) para acordar un día y hora alternativos.
 
