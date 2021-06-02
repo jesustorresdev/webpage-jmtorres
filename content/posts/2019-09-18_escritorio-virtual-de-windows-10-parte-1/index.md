@@ -26,6 +26,7 @@ images:
 
 aliases:
  - "/iommu-virtualizando-windows-10-9afb7c01c358"
+ - "/posts/escritorio-virtual-de-windows-10-parte-i"
 ---
 
 _Este artículo pertenece a una serie donde se explica como instalar Windows 10 en una máquina virtual asignándole una de las GPU del equipo de forma exclusiva, para obtener un rendimiento gráfico similar al que tendría en una máquina real._
