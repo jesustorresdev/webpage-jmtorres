@@ -1,7 +1,7 @@
 ---
 title: "Horario y lugar de las tutorías"
 author: "Jesús Torres"
-date: 2020-07-12 16:33:02+01:00
+date: 2021-06-23 23:41:47+01:00
 
 subtitle: "Universidad de La Laguna"
 
@@ -15,10 +15,10 @@ aliases:
     - "/tutorías-20c4b0125116"
 ---
 
-Durante el actual curso académico 2020/2021 el horario de tutorías previsto será el siguiente:
+Durante el actual curso académico 2021/2022 el horario de tutorías previsto será el siguiente:
 
-* **Martes**, de 16:30 a 19:30.
-* **Jueves**, de 16:30 a 19:30.
+* **Martes**, de 16:00 a 18:00.
+* **Jueves**, de 16:00 a 18:00.
 
 Sin embargo, para evitar aglomeraciones y como el horario puede sufrir cambios por distintos motivos, **se recomienda consultar el siguiente calendario con los horarios actualizados y coger cita en el hueco deseado** para confirmar la      asistencia:
 
