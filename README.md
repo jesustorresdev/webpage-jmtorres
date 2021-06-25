@@ -2,8 +2,7 @@
 
 Mi sitio web personal, hecho con Hugo y el tema Loveit.<br />
 
-Copyright 2020 Jesús Torres \<jmtorres@ull.es\><br />
-Esta obra está bajo [Licencia Creative Commons Reconocimiento 4.0 Internacional](http://creativecommons.org/licenses/by/4.0/) excepto en aquellos contenidos dónde se indique lo contrario.
+Este sitio web se distribuye bajo una [Licencia Creative Commons Atribución 4.0 Internacional](http://creativecommons.org/licenses/by/4.0/) excepto en aquellos contenidos dónde se indique lo contrario.
 
 ## Tema
 
