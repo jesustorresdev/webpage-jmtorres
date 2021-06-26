@@ -5,7 +5,7 @@ title = "Jesús Torres"
 description = "Página personal y blog de Jesús Torres."
 keywords = ["jmtorres", "Jesús Torres", "Universidad", "Linux", "Sistemas Operativos", "Qt", "C++"]
 
-theme = "LoveIt"
+theme = "CodeIT"
 
 # Actualizar el lastmod de cada página usando la fecha del commit
 enableGitInfo = true

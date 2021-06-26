@@ -5,12 +5,9 @@
 {{- else if $type | eq "post" -}}
   {{- $src = ( printf "https://www.facebook.com/plugins/post.php?%s&" (querify "href" $src)) -}}
 {{- end -}}
-{{- $options := dict "Src" $src -}}
+{{- $options := dict "Src" $src "RequiresCookieConsent" true -}}
 {{- if .Get "caption" -}}
   {{- $options = dict "Caption" (.Get "caption") | merge $options -}}
 {{- end -}}
-{{- if $.Site.Params.cookieconsent | and $.Site.Params.cookieconsent.enable -}}
-  {{- dict "Site" "facebook.com" | partial "thirdpartycookies.html" -}}
-  {{- $options = dict "CookieConsentTag" "marketing" | merge $options -}}
-{{- end -}}
+{{- dict "Site" "facebook.com" | partial "cookienotice.html" -}}
 {{- partial "iframe.html" $options -}}

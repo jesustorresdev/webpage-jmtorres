@@ -1,7 +1,9 @@
 {{- $src := .Src -}}
-<figure {{ if .CookieConsentTag }}class="cookieconsent-optin"{{ end }}>
+{{- $cookieConsentEnabled := default false site.Params.cookieconsent.enable -}}
+{{- $requiresCookieConsent := default false .RequiresCookieConsent | and $cookieConsentEnabled -}}
+<figure {{ if $requiresCookieConsent }}data-cookieconsent="allow"{{ end }}>
     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-        <iframe {{ if .CookieConsentTag }} data-src="{{ $src }}" data-cookieconsent="{{ .CookieConsentTag }}"{{ else }} src="{{ $src }}"{{ end }} style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allow="fullscreen"></iframe>
+        <iframe {{ if $requiresCookieConsent }} data-src="{{ $src }}" data-cookieconsent="allow"{{ else }} src="{{ $src }}"{{ end }} style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allow="fullscreen"></iframe>
     </div>
     {{- if .Caption -}}
       <figcaption>

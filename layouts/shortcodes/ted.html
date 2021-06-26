@@ -1,11 +1,8 @@
 {{- $id := .Get "id" | default (.Get 0) -}}
 {{- $lang := .Get "lang" | default (.Get 1) -}}
-{{- $options := dict "Src" ( printf "https://embed.ted.com/talks/lang/%s/%s" $lang $id ) -}}
+{{- $options := dict "Src" ( printf "https://embed.ted.com/talks/lang/%s/%s" $lang $id ) "RequiresCookieConsent" true -}}
 {{- if .Get "caption" -}}
   {{- $options = dict "Caption" (.Get "caption") | merge $options -}}
 {{- end -}}
-{{- if $.Site.Params.cookieconsent | and $.Site.Params.cookieconsent.enable -}}
-  {{- dict "Site" "ted.com" | partial "thirdpartycookies.html" -}}
-  {{- $options = dict "CookieConsentTag" "statistics" | merge $options -}}
-{{- end -}}
+{{- dict "Site" "ted.com" | partial "cookienotice.html" -}}
 {{- partial "iframe.html" $options -}}

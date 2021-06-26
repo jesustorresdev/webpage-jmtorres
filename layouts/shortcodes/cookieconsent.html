@@ -1,7 +1,0 @@
-{{- if $.Site.Params.cookieconsent | and $.Site.Params.cookieconsent.enable -}}
-<div class="cookieconsent-{{ .Get 0 | default "optin" }}">
-{{- end -}}
-   {{- .Inner -}}
-{{- if $.Site.Params.cookieconsent | and $.Site.Params.cookieconsent.enable -}}
-</div>
-{{- end -}}

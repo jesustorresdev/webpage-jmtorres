@@ -3,12 +3,9 @@
 {{- $start := .Get "start" | default "false" -}}
 {{- $loop := .Get "loop" | default "false" -}}
 {{- $delay := .Get "delay" | default "3000" -}}
-{{- $options := dict "Src" ( printf "https://docs.google.com/%s/d/e/%s/embed?start=%s&loop=%s&delayms=%s" $type $id $start $loop $delay ) -}}
+{{- $options := dict "Src" ( printf "https://docs.google.com/%s/d/e/%s/embed?start=%s&loop=%s&delayms=%s" $type $id $start $loop $delay ) "RequiresCookieConsent" true -}}
 {{- if .Get "caption" -}}
   {{- $options = dict "Caption" (.Get "caption") | merge $options -}}
 {{- end -}}
-{{- if $.Site.Params.cookieconsent | and $.Site.Params.cookieconsent.enable -}}
-  {{- dict "Site" "google.com" | partial "thirdpartycookies.html" -}}
-  {{- $options = dict "CookieConsentTag" "statistics" | merge $options -}}
-{{- end -}}
+{{- dict "Site" "google.com" | partial "cookienotice.html" -}}
 {{- partial "iframe.html" $options -}}
