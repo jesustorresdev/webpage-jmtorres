@@ -35,6 +35,7 @@ enableEmoji = true
       Twitter = true
       Facebook = true
       Linkedin = true
+      Telegram = true
       Whatsapp = true
 
   [params.header]
