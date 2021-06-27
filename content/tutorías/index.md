@@ -36,5 +36,7 @@ Al entrar y llegar hasta las escaleras, en la puerta de la izquierda.
 
 A continuación se puede ver la ubicación del Edificio Garoé en el Campus de Anchieta de la Universidad de La Laguna:
 
-{{< thirdpartycookies "mapbox.com" >}}
+{{< cookienotice "mapbox.com" >}}
+{{< cookieconsent >}}
 {{< mapbox lng="-16.321359" lat="28.482603" zoom="17" >}}
+{{</ cookieconsent >}}
