@@ -119,9 +119,12 @@ enableEmoji = true
     url = "/tutorías/"
     weight = 2
   [[menu.main]]
-    identifier = "acerca"
-    name = "Acerca"
-    url = "/acerca/"
+    identifier = "linkedin"
+    pre = "<i class='fab fa-linkedin fa-fw'></i>"
+    post = ""
+    name = ""
+    url = "https://linkedin.com/in/jesusmtorres"
+    title = "Linkedin"
     weight = 3
 
 [markup]
