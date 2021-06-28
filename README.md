@@ -1,17 +1,17 @@
 # webpages-jmtorres
 
-Mi sitio web personal, hecho con Hugo y el tema Loveit.<br />
+Mi sitio web personal, hecho con Hugo y el tema CodeIT.<br />
 
 Este sitio web se distribuye bajo una [Licencia Creative Commons Atribución 4.0 Internacional](http://creativecommons.org/licenses/by/4.0/) excepto en aquellos contenidos dónde se indique lo contrario.
 
 ## Tema
 
-El tema escogido es [LoveIt](https://hugoloveit.com/).
-Su configuración, opciones y características soportadas están documentadas [aquí](https://hugoloveit.com/categories/)
+El tema escogido es [CodeII](https://codeit.suntprogramator.dev/).
+Su configuración, opciones y características soportadas están documentadas [aquí](https://codeit.suntprogramator.dev/categories/)
 
 ## Server
 
-El tema LoveIt usa `.Scratch` para implementar algunas características, por lo que se recomienda añadir `--disableFastRender` a  `hugo server` durante la previsualización:
+El tema CodeIT usa `.Scratch` para implementar algunas características, por lo que se recomienda añadir `--disableFastRender` a  `hugo server` durante la previsualización:
 
 ```.bash
 $ ./hugo server --disableFastRender
@@ -35,7 +35,7 @@ Algunas de estas reglas están basadas en:
 
 ### Coloreado de sintaxis
 
-En lo posible se debe hacer uso del coloreado de sintaxis con el _shortcode_ highlight.
+En lo posible se debe hacer uso del coloreado de sintaxis con el _shortcode_ `highlight`.
 Algunas reglas a tener en cuenta:
 
  * Si un archivo es pequeño y no se encuentra un estilo adecuado de coloreado de sintaxis, se puede valorar optar por usar simplemente _code fences_ (\`\`\`).
