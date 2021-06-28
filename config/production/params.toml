@@ -10,7 +10,7 @@
   background = "#ffffff"
 
 [cookieconsent.content]
-  message = "Este sitio web no usa cookies propias ni tecnologías similares pero integra vídeo de Youtube, documentos de G Suite y otros contenidos de terceros que si las utilizan, tal y como se especifica en la política de cookies.<br>Puedes aceptarla para acceder a todos los contenidos o rechazarla."
+  message = "Este sitio web no usa cookies propias ni tecnologías similares pero integra vídeo de Youtube, documentos de Google Workspace y otros contenidos de terceros que si las utilizan, tal y como se especifica en la política de cookies. Puede aceptarla para acceder a todos los contenidos o rechazarla."
   allow = "Aceptar"
   href = "/política-de-cookies"
   link = "POLÍTICA DE COOKIES"

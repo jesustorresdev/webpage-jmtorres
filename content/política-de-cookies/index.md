@@ -42,7 +42,7 @@ Recolecta información del uso del servicio, las preferencias de los usuarios y 
 ## Gestión de las cookies
 
 Las _cookies_ se pueden bloquear o eliminar en cualquier momento, tanto para todos los sitios web en general como para algunos en particular, solo con modificar la configuración de tu navegador.
-A continuación podrás encontrar información sobre cómo gestionar el uso de _cookies_ en función del navegador que utilices:
+A continuación podrá encontrar información sobre cómo gestionar el uso de _cookies_ en función del navegador que utilice:
 
 * **Firefox:** \
 ["Protección de Rastreo Mejorada en Firefox para Escritorio"](https://support.mozilla.org/es/kb/proteccion-de-rastreo-mejorada-en-firefox-para-esc)
@@ -58,4 +58,4 @@ A continuación podrás encontrar información sobre cómo gestionar el uso de _
 ## Cambios en la política de cookies
 
 Es posible que en el futuro actualicemos la política de cookies.
-Por eso te recomendamos que la revises regularmente con el objetivo de estar adecuadamente informado.
+Por eso recomendamos que la revise regularmente con el objeto de mantenerse informado.
