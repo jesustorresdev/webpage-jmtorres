@@ -4,6 +4,7 @@ author: "Jesús Torres"
 date: 2021-06-23 23:41:47+01:00
 
 subtitle: "Universidad de La Laguna"
+toc: false
 
 featuredImage: "images/2.jpg" 
 images:
@@ -24,7 +25,7 @@ Sin embargo, para evitar aglomeraciones y como el horario puede sufrir cambios p
 
 {{< figure src="images/1.png" caption="Horarios de tutorías actualizados." link="https://calendar.google.com/calendar/u/0/selfsched?sstoken=UVB1bnBDWEt5VWlCfGRlZmF1bHR8ZTEwZTA4MzdmOTcwOTdjOGEzMmU3YjhlZDRmYWI2Mzk" >}}
 
-En caso de tener algún tipo de problema con estos horarios no dudes en ponerte en [contacto conmigo](https://www.ull.es/apps/guias/guias/view_teacher_niu/588/%28%3FPjmtorres.*%29/) para acordar un día y hora alternativos.
+En caso de tener algún tipo de problema con estos horarios no dudes en ponerte en [contacto conmigo](https://www.ull.es/apps/guias/guias/view_teacher_niu/745/jmtorres/) para acordar un día y hora alternativos.
 
 Debido a la situación sobrevenida derivada de la pandemia de COVID-19, **las tutorías serán preferentemente no presenciales**, por videoconferencia.
 
