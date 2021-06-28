@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Open+Sans+Condensed:700|Source+Code+Pro:400&display=swap');
-$global-font-family: Open Sans, sans-serif;
-$toc-title-font-family: Open Sans Condensed, sans-serif;
-$content-headers-font-family: Open Sans Condensed, sans-serif;
-$single-title-font-family: Open Sans Condensed, sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,700|Roboto+Slab:700|Source+Code+Pro:400&display=swap');
+$global-font-family: Roboto, sans-serif;
+$global-font-size: 20px;
+$global-font-weight: 300;
 
-$callout-font-family: Open Sans, sans-serif;
+$toc-title-font-family: Roboto, sans-serif;
+$content-headers-font-family: Roboto, sans-serif;
+$single-title-font-family: Roboto Slab, serif;
+
+$callout-font-family: Roboto, sans-serif;
 $callout-font-size: 0.7rem;
 
 $global-link-hover-color: #006699;

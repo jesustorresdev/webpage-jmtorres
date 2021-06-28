@@ -1,9 +1,23 @@
 // Ajuste de estilos del tema
 
+.home .home-profile .links
+{
+    font-size: 1.2rem;
+}
+
 .single .single-title {
     font-family: $single-title-font-family;
     font-size: 2rem;
     margin: 1rem 0 .3rem;
+}
+
+.single .post-meta {
+    font-size: 0.8rem;
+    margin-top: -0.2rem;
+
+    .author {
+        font-size: 0.8rem;
+    }
 }
 
 .toc-title {
