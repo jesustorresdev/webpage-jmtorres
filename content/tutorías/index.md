@@ -21,11 +21,11 @@ Durante el actual curso académico 2021/2022 el horario de tutorías previsto se
 * **Martes**, de 16:00 a 18:00.
 * **Jueves**, de 16:00 a 18:00.
 
-Sin embargo, para evitar aglomeraciones y como el horario puede sufrir cambios por distintos motivos, **se recomienda consultar el siguiente calendario con los horarios actualizados y coger cita en el hueco deseado** para confirmar la      asistencia:
+Sin embargo, para evitar aglomeraciones y como el horario puede sufrir cambios por distintos motivos, **se recomienda consultar el siguiente calendario con los horarios actualizados y coger cita en el hueco deseado** para confirmar la asistencia:
 
 {{< figure src="images/1.png" caption="Horarios de tutorías actualizados." link="https://calendar.google.com/calendar/u/0/selfsched?sstoken=UVB1bnBDWEt5VWlCfGRlZmF1bHR8ZTEwZTA4MzdmOTcwOTdjOGEzMmU3YjhlZDRmYWI2Mzk" >}}
 
-En caso de tener algún tipo de problema con estos horarios no dudes en ponerte en [contacto conmigo](https://www.ull.es/apps/guias/guias/view_teacher_niu/745/jmtorres/) para acordar un día y hora alternativos.
+En caso de tener algún tipo de problema con estos horarios no dude en ponerse en [contacto conmigo](https://www.ull.es/apps/guias/guias/view_teacher_niu/745/jmtorres/) para acordar un día y hora alternativos.
 
 Debido a la situación sobrevenida derivada de la pandemia de COVID-19, **las tutorías serán preferentemente no presenciales**, por videoconferencia.
 
