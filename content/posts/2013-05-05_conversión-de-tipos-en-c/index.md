@@ -3,6 +3,11 @@ title: "Conversión de tipos en C++"
 author: "Jesús Torres"
 #date: 2013-05-05T00:00:00.000Z
 
+summary: |
+  Al igual que ocurre en C, el compilador de C++ soporta convertir variables de un tipo en otro diferente.
+  C++ permite indicar estas conversiones mediante la misma sintaxis que C, pero lo recomendado es utilizar los
+  operadores específicos que C++ tiene para eso.
+
 code:
   maxShownLines: -1
 
@@ -73,7 +78,7 @@ int a = 10;
 float d = static_cast<float>(a);    // correcto <1>
 {{< / highlight >}}
 1. Equivalente a `float d = a`, ya que esta conversión se hace de forma implícita.
-{{< /callouts >}},\
+{{< /callouts >}}
 
 o para hacer una división de enteros en coma flotante:
 
@@ -131,7 +136,7 @@ Foo foo;
 
 char* c = static_cast<char*>(foo);  // correcto <2>
 {{< / highlight >}}
-1. Definición del operador de conversión de objetos `Foo` a `const char*`/
+1. Definición del operador de conversión de objetos `Foo` a `const char*`.
 2. Equivalente a `char* c = foo`.
 Tanto si se usa `static_cast` como con la conversión implícita, se llama al método de conversión `operator const char*()` de la clase `Foo`.  
 {{< /callouts >}}
