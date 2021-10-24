@@ -24,14 +24,14 @@ Por ejemplo, ir de `char` a `int` o de este a `float` es algo que ace el compila
 
 {{< highlight c >}}
 int i = 10;  
-float d = i;       /* correcto */
+float d = i;        /* correcto */
 {{< / highlight >}}
 
 Sin embargo, hay conversiones que no son válidas:
 
 {{< highlight c >}}
 int* i = NULL;  
-float* d = i;      /* conversión inválida de 'int*' a 'float*' */
+float* d = i;       /* conversión inválida de 'int*' a 'float*' */
 {{< / highlight >}}
 
 cuyo comportamiento por defecto es no es el deseado:
@@ -48,7 +48,7 @@ Por ejemplo:
 {{< highlight c >}}
 int a = 10;  
 int b = 7;  
-float c = (float)a / (float)b;    /* c = 1.4 */
+float c = (float)a / (float)b;  /* c = 1.4 */
 {{< / highlight >}}
 
 En C++ se puede utilizar la misma expresión de _typecast_ que en C, aunque no es lo más aconsejable.
@@ -70,10 +70,10 @@ Por ejemplo, de `int` a `float`:
 {{< callouts >}}
 {{< highlight cpp >}}
 int a = 10;  
-float d = static_cast<float>(a); <1>
+float d = static_cast<float>(a);    // correcto <1>
 {{< / highlight >}}
-1. Correcto y equivalente a `float d = a`.
-{{< /callouts >}}
+1. Equivalente a `float d = a`, ya que esta conversión se hace de forma implícita.
+{{< /callouts >}},\
 
 o para hacer una división de enteros en coma flotante:
 
@@ -84,27 +84,25 @@ float c = static_cast<float>(a) / static_cast<float>(b); // c = 1.4
 // float c = a / b                                       // c = 1.0
 {{< / highlight >}}
 
-Permite la conversión de cualquier tipo de puntero a `void*` ---que es un tipo de conversión que también ocurre de forma implícita---:
+Permite la conversión de cualquier tipo de puntero a `void*`:
 
 {{< callouts >}}
 {{< highlight cpp >}}
-int* pa = NULL;  
-void* pb = static_cast<void*>(pa); <1>
+int* pa = nullptr;  
+void* pb = static_cast<void*>(pa);  // correcto <1>
 {{< / highlight >}}
-1. Correcto y equivalente a `void* pb = pa`.
+1. Equivalente a `void* pb = pa`, ya que la conversión de cualquier puntero a `void*` se hace de forma implícita.
 {{< /callouts >}}
 
 y a la inversa ---que no es una conversión implícita---:
 
 {{< callouts >}}
 {{< highlight cpp >}}
-void* pa = NULL;  
-char* pb = static_cast<char*>(pa); <1>
-// char* pb = pa;                  <2>
+void* pa = nullptr;  
+char* pb = static_cast<char*>(pa);  // correcto
+// char* pb = pa;                   // ¡error! <1>
 {{< / highlight >}}
-1. Correcto.
-2. ¡Error!.
-La conversión de `void*` a otros tipos de punteros no se hace de forma implícita.
+1. La conversión de `void*` a otros tipos de punteros no se hace de forma implícita.
 {{< /callouts >}}
 
 De hecho, para reservar 10 caracteres con `malloc()` sería algo así:
@@ -123,7 +121,7 @@ class Foo
 {  
     ...
     
-    operator const char*()         <1>
+    operator const char*() <1>
     {  
         ...  
     }  
@@ -131,11 +129,11 @@ class Foo
 
 Foo foo;
 
-char* c = static_cast<char*>(foo); <2>
+char* c = static_cast<char*>(foo);  // correcto <2>
 {{< / highlight >}}
 1. Definición del operador de conversión de objetos `Foo` a `const char*`/
-2. Correcto y equivalente a `char* c = foo`.
-En ambos casos se llama al método de conversión `Foo::operator const char*()`.  
+2. Equivalente a `char* c = foo`.
+Tanto si se usa `static_cast` como con la conversión implícita, se llama al método de conversión `operator const char*()` de la clase `Foo`.  
 {{< /callouts >}}
 
 `static_cast` también convierte de clases bases a derivadas en una jerarquía de clases.
@@ -159,8 +157,8 @@ Base* base = derived;                                    <1>
 
 Derived* derived_de_nuevo = static_cast<Derived*>(base); <2>
 {{< / highlight >}}
-1. Conversión implícita de puntero a objeto `Derived` a puntero a objeto `Base`.
-2. Ahora recuperamos el puntero a objeto `Derived` a partir del puntero a objeto `Base`.
+1. Conversión implícita de puntero a `Derived` a puntero a `Base`.
+2. Eecuperamos el puntero a `Derived` a partir del puntero a `Base`.
 {{< / callouts >}}
 
 Hay que tener en cuenta que las conversiones `static_cast` se resuelven siempre en **tiempo de compilación**, por lo que no se comprueba si el tipo al que se convierte coincide con el tipo real del objeto.
@@ -181,10 +179,9 @@ class Derived: public Base
 
 Base* base = new Base;
 
-Derived* derived = static_cast<Derived*>(base);
+Derived* derived = static_cast<Derived*>(base); // ¡indefinido! <1>
 {{< / highlight >}}
-1. ¡Operación indefinida!.
-Intentamos obtener un puntero a `Derived` para un objeto creado directamente como `Base`. 
+1. Intentamos obtener un puntero a `Derived` para un objeto creado directamente como `Base`. 
 {{< / callouts >}}
 
 ## dynamic_cast
@@ -219,11 +216,11 @@ Derived* derived_de_nuevo = dynamic_cast<Derived*>(base); <3>
 {{< / highlight >}}
 1. Declaramos el destructor virtual para que la clase sea polimórfica.
 2. Conversión implícita de puntero a objeto de clase derivada a puntero a objeto de su clase base.
-3. Recuperamos el puntero a `Derived` a partir del puntero a `Base` usando `dynamic_cast()`.
+3. Recuperamos el puntero a `Derived` a partir del puntero a `Base` usando `dynamic_cast`.
 {{< / callouts >}}
 
 `dynamic_cast` busca en **tiempo de ejecución** el objeto del tipo deseado en la jerarquía del objeto, devolviéndolo en caso de encontrarlo.
-Si los tipos no son compatibles ---por ejemplo, si el objeto no fue creado originalmente con el tipo o con un tipo derivado del tipo indicado--- `dynamic_cast` devuelve `NULL`, si se está trabajando con puntero, o lanza una excepción `std::bad_cast`, si se está trabajando con referencias.
+Si los tipos no son compatibles ---por ejemplo, si el objeto no fue creado originalmente con el tipo o con un tipo derivado del tipo indicado--- `dynamic_cast` devuelve `nullptr`, si se está trabajando con puntero, o lanza una excepción `std::bad_cast`, si se está trabajando con referencias.
 
 {{< callouts >}}
 {{< highlight cpp >}}
@@ -241,10 +238,10 @@ class Derived: public Base
 
 Base* base = new Base;
 
-Derived* derived = dynamic_cast<Derived*>(base); // = NULL ¡error! <2>
+Derived* derived = dynamic_cast<Derived*>(base); // = nullptr ¡error! <2>
 {{< / highlight >}}
 1. Declaramos el destructor virtual para que  la clase sea polimórfica.  
-2. Al intentar obtener un puntero `Derived` para el objeto creado como `Base` se obtiene `NULL`.
+2. Al intentar obtener un puntero `Derived` para el objeto creado como `Base` se obtiene `nullptr`.
 {{< / callouts >}}
 
 ## const_cast
@@ -262,9 +259,9 @@ Añadir `const` a un tipo es una conversión implícita:
 {{< callouts >}}
 {{< highlight cpp >}}
 int a = 10;  
-const int b = const_cast<const int>(a); <1>
+const int b = const_cast<const int>(a); // correcto <1>
 {{< / highlight >}}
-1. Correcto y equivalente a `const int b = a`.
+1. Equivalente a `const int b = a`, pues añadir `const` a un tipo es una conversión implícita.
 {{< / callouts >}}
 
 pero quitarlo no:
@@ -272,12 +269,10 @@ pero quitarlo no:
 {{< callouts >}}
 {{< highlight cpp >}}
 const int a = 10;  
-int b = const_cast<int>(a); <1>
-// int b = a;               <2>
+int b = const_cast<int>(a); // correcto
+// int b = a;               // ¡error! <2>
 {{< / highlight >}}
-1. Correcto.
-2. ¡Error!.
-No se puede quitar el `const` de forma implícita.
+1. No se puede quitar el `const` de forma implícita.
 {{< / callouts >}}
 
 Es importante destacar que su uso queda indefinido si la variable original realmente es constante.
@@ -305,7 +300,7 @@ También se puede utilizar para convertir un puntero en un entero para manipular
 char* c = new char[15];  
 uintptr_t p = reinterpret_cast<uintptr_t>(c) <1>
 {{< / highlight >}}
-1. Obtener un entero con la dirección a la que apunta `c`.
+1. Obtener un entero `p` que almacena la dirección de `c` en la memoria.
 {{< / callouts >}}
 
 La única garantía ofrecida por el estándar de C++ es que si se hace un `reinterpret_cast` y posteriormente se realiza otro para volver al tipo original, se obtiene el mismo resultado, siempre que el tipo intermedio tenga el tamaño suficiente para que no se pierda información.
@@ -338,7 +333,7 @@ class Derived: protected Base
 };
 
 Derived* derived = new Derived;  
-Base* base = static_cast<Base*>(derived);  // ¡Error!
+Base* base = static_cast<Base*>(derived);   // ¡error!
 {{< / highlight >}}
 
 ya que la clase `Base` es una clase base protegida de `Derived`.
@@ -356,8 +351,8 @@ class Derived: protected Base
 };
 
 Derived* derived = new Derived;  
-Base* base = reinterpret_cast<Base*>(derived);  // Correcto  
-//Base* base = (Base*)derived;                  // Correcto
+Base* base = reinterpret_cast<Base*>(derived);  // correcto  
+//Base* base = (Base*)derived;                  // correcto
 {{< / highlight >}}
 
 ## Referencias
