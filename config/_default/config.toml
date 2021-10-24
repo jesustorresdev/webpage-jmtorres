@@ -73,7 +73,7 @@ enableEmoji = true
       paginate = 6
   
   [params.page.comment]
-    enable = true
+    enable = false
     [params.page.comment.disqus]
       enable = true
       shortname = "jesus-torres"
