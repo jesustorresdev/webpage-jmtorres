@@ -50,7 +50,8 @@ Para que esta configuración funcione es necesario:
 Para empezar necesitamos _QEMU/KVM_, _Libvirt_, _OVMF_ y _Virtual Machine Manager_:
 
 ```
-$ sudo apt-get install qemu-kvm ovmf libvirt-clients libvirt-daemon-system bridge-utils virt-manager
+$ sudo apt-get install qemu-kvm ovmf libvirt-clients \
+libvirt-daemon-system bridge-utils virt-manager
 ```
 
 [_Virtual Machine Manager_](https://virt-manager.org/) (o _virt-manager_) será la aplicación que utilizaremos para configurar y lanzar la máquina virtual.
